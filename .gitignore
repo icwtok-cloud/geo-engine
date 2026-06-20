@@ -1,0 +1,6 @@
+# Local paths in configs — update site_dir to your local path before running
+*.pyc
+__pycache__/
+.DS_Store
+*.token
+*.env

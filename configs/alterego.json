@@ -1,0 +1,105 @@
+{
+  "domain": "https://alterego.lat",
+  "brand": "Alter Ego",
+  "lang": "es",
+  "date": "2026-05-31",
+  "site_dir": "/Users/hv/alterego_site",
+  "section_dir": "recursos",
+  "section_path": "/recursos",
+  "section_name": "Recursos",
+  "section_title": "Recursos del operador",
+  "section_kicker": "Knowledge base",
+  "section_desc": "Guías operativas sobre automatización con IA, el modelo operador vs agencia, Claude Code/MCP aplicado a negocios y go-to-market de producto digital. Sin teoría: método y stack real.",
+  "article_kicker": "Recurso · Alter Ego",
+  "og_image": "https://alterego.lat/img/og-image.png",
+  "logo_svg": "<svg viewBox=\"0 0 470 60\" role=\"img\" aria-label=\"ALTER EGO\"><defs><linearGradient id=\"lg\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"#e8c878\"/><stop offset=\".55\" stop-color=\"#c9a24b\"/><stop offset=\"1\" stop-color=\"#7b6cf6\"/></linearGradient></defs><text x=\"0\" y=\"44\" font-family=\"Arial Black,Arial,sans-serif\" font-weight=\"900\" font-size=\"44\" letter-spacing=\"6\" fill=\"#f0f0f7\">ALTER</text><circle cx=\"248\" cy=\"29\" r=\"16\" fill=\"#7b6cf6\" opacity=\".22\"/><circle cx=\"248\" cy=\"29\" r=\"9.5\" fill=\"url(#lg)\"/><circle cx=\"248\" cy=\"29\" r=\"14\" fill=\"none\" stroke=\"url(#lg)\" stroke-width=\"2\" opacity=\".85\"/><text x=\"272\" y=\"44\" font-family=\"Arial Black,Arial,sans-serif\" font-weight=\"900\" font-size=\"44\" letter-spacing=\"6\" fill=\"#f0f0f7\">EGO</text></svg>",
+  "theme": {
+    "bg": "#0a0a0f",
+    "text": "#f0f0f7",
+    "accent": "#e8c878",
+    "accent2": "#7b6cf6",
+    "muted": "#9a9ab5",
+    "textbody": "#d6d2e8",
+    "border": "#2a2a3d",
+    "card": "rgba(255,255,255,.025)",
+    "glow": "#1d1840"
+  },
+  "nav": [
+    {
+      "href": "/recursos",
+      "label": "Recursos"
+    },
+    {
+      "href": "/sobre",
+      "label": "Sobre Hernán"
+    },
+    {
+      "href": "/audit",
+      "label": "Audit"
+    }
+  ],
+  "footer_links": [
+    {
+      "href": "/recursos",
+      "label": "Recursos"
+    },
+    {
+      "href": "/sobre",
+      "label": "Sobre"
+    },
+    {
+      "href": "/agendar",
+      "label": "Agendar diagnóstico"
+    },
+    {
+      "href": "https://wa.me/5491178251727",
+      "label": "WhatsApp"
+    }
+  ],
+  "footer_tagline": "Hernán Vega · operador de producto digital & automatización",
+  "cta": {
+    "href": "/agendar?utm_source=alterego&utm_medium=recursos&utm_campaign=hub",
+    "label": "Agendar 15 min"
+  },
+  "author": {
+    "id": "https://alterego.lat/#hernan",
+    "name": "Hernán Vega",
+    "url": "https://alterego.lat/sobre",
+    "jobTitle": "Operador de producto digital y automatización",
+    "sameAs": []
+  },
+  "org": {
+    "id": "https://alterego.lat/#org",
+    "name": "Alter Ego",
+    "url": "https://alterego.lat/",
+    "logo": "https://alterego.lat/img/favicon-180.png",
+    "sameAs": [
+      "https://wa.me/5491178251727"
+    ]
+  },
+  "endcta": {
+    "title": "¿Querés esto funcionando en tu operación?",
+    "body": "Diagnóstico de 15 minutos, sin compromiso. Un operador, no una agencia.",
+    "btn_label": "Agendar diagnóstico →",
+    "btn_href_tmpl": "/agendar?utm_source=alterego&utm_medium=recursos&utm_campaign={slug}"
+  },
+  "_deploy": {
+    "netlify_site_id": "3ad6ff40-c4bc-4be9-8750-a673713dc356",
+    "exclude_dirs": [
+      ".claude",
+      "sales",
+      "anim",
+      ".git",
+      "__pycache__"
+    ],
+    "exclude_ext": [
+      ".py",
+      ".pyc"
+    ],
+    "exclude_names": [
+      ".DS_Store"
+    ],
+    "indexnow_key": "a1f4e7c92b8d4f6a8e3c1b5d9f2a7c40",
+    "result_json": "/Users/hv/geo_engine_alterego/result.json"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "alterego": {
+    "id": "3ad6ff40-c4bc-4be9-8750-a673713dc356",
+    "url": "https://alterego-geo-live.netlify.app",
+    "subdomain": "alterego-geo-live"
+  },
+  "cursos": {
+    "id": "04779e57-2194-4953-b9e3-a44cb03ff4dc",
+    "url": "https://vraven-cursos-geo-live.netlify.app",
+    "subdomain": "vraven-cursos-geo-live"
+  }
+}

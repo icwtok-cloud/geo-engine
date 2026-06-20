@@ -1,0 +1,108 @@
+{
+  "domain": "https://cursos.vraven.app",
+  "brand": "Vraven",
+  "lang": "es",
+  "date": "2026-05-31",
+  "site_dir": "/Users/hv/vraven_hub",
+  "section_dir": "recursos",
+  "section_path": "/recursos",
+  "section_name": "Recursos",
+  "section_title": "Guías para trabajar remoto y cobrar en dólares",
+  "section_kicker": "Guías Vraven",
+  "section_desc": "Guías prácticas para conseguir trabajo remoto desde LatAm, cobrar en dólares, aprender las habilidades digitales más demandadas y usar IA para producir más. Sin humo: pasos concretos.",
+  "article_kicker": "Guía · Vraven",
+  "og_image": "https://cursos.vraven.app/vraven_social_avatar.png",
+  "logo_svg": "",
+  "theme": {
+    "bg": "#0b0d1a",
+    "text": "#eef1ff",
+    "accent": "#f6c453",
+    "accent2": "#6d5ef0",
+    "muted": "#9aa1cf",
+    "textbody": "#cdd2f5",
+    "border": "#2c3160",
+    "card": "rgba(255,255,255,.025)",
+    "glow": "#241f55",
+    "font": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif"
+  },
+  "nav": [
+    {
+      "href": "/recursos",
+      "label": "Recursos"
+    },
+    {
+      "href": "/#cursos",
+      "label": "Cursos"
+    },
+    {
+      "href": "/afiliados",
+      "label": "Afiliados"
+    }
+  ],
+  "footer_links": [
+    {
+      "href": "/recursos",
+      "label": "Recursos"
+    },
+    {
+      "href": "/#cursos",
+      "label": "Ver cursos"
+    },
+    {
+      "href": "/#cotizar",
+      "label": "Contacto"
+    }
+  ],
+  "footer_tagline": "Cursos y productos digitales para cobrar en dólares desde LatAm",
+  "cta": {
+    "href": "/#cursos",
+    "label": "Ver cursos"
+  },
+  "author": {
+    "id": "https://cursos.vraven.app/#vraven",
+    "name": "Vraven",
+    "url": "https://cursos.vraven.app/",
+    "jobTitle": "Plataforma de cursos y productos digitales",
+    "sameAs": []
+  },
+  "org": {
+    "id": "https://cursos.vraven.app/#org",
+    "name": "Vraven",
+    "url": "https://cursos.vraven.app/",
+    "logo": "https://cursos.vraven.app/vraven_social_avatar.png",
+    "sameAs": []
+  },
+  "endcta": {
+    "title": "Aprendé la habilidad y empezá a cobrar en dólares",
+    "body": "Cursos prácticos US$5.99 con garantía de 7 días. De cero a aplicable, sin relleno.",
+    "btn_label": "Ver cursos →",
+    "btn_href_tmpl": "/#cursos?utm_source=vraven&utm_medium=recursos&utm_campaign={slug}"
+  },
+  "_deploy": {
+    "netlify_site_id": "04779e57-2194-4953-b9e3-a44cb03ff4dc",
+    "include": [
+      "index.html",
+      "servicios.html",
+      "curso-claude-code.html",
+      "gracias-claude.html",
+      "afiliados.html",
+      "robots.txt",
+      "sitemap.xml",
+      "vraven_social_avatar.png",
+      "favicon.ico",
+      "curso/index.html",
+      "descargas/curso-claude-code.zip",
+      "bg/web.mp4",
+      "bg/code.mp4",
+      "bg/bots.mp4",
+      "bg/anim.mp4",
+      "bg/hyper.mp4",
+      "bg/auto.mp4",
+      "llms.txt",
+      "b2e5f8c41d9a4e7b8f3c6d2a9e1b4c70.txt"
+    ],
+    "indexnow_key": "b2e5f8c41d9a4e7b8f3c6d2a9e1b4c70",
+    "result_json": "/Users/hv/geo_engine_cursos/result.json",
+    "note": "MODO ALLOWLIST (seguro): deploy.py sube SOLO los archivos de 'include' + todo recursos/ + recursos.html. Manifest tomado de DEPLOY.md (vraven_hub mezcla servidos con internos .md/.py). El key file de IndexNow se agrega a include en runtime. Verificar post-deploy que un .md interno da 404."
+  }
+}

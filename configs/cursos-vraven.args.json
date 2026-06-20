@@ -1,0 +1,16 @@
+{
+  "brand_block": "MARCA: Vraven (cursos.vraven.app). Plataforma de cursos y productos digitales para latinoamericanos que quieren trabajar remoto y cobrar en dólares. 47+ cursos interactivos US$5.99 c/u, garantía 7 días. Catálogo: IA aplicada (Claude, ChatGPT, agentes, automatización), habilidades de oficina (Excel/Sheets, Notion, Canva), freelance, marketing, ventas, finanzas personales, soporte tech, inglés para trabajo remoto, trading. Cursos destacados en Hotmart: Inglés para trabajo remoto, Claude Code, Trading institucional, IA & Automatización.\nAUDIENCIA: latinoamericanos (AR, MX, CO, CL, PE, etc.) que buscan ingreso en USD, independencia geográfica, reconversión laboral o un primer skill digital vendible. Edad ~20-45, mezcla de estudiantes, empleados que quieren salir, y freelancers que quieren escalar.\nPROPUESTA: aprender una habilidad concreta y aplicable rápido, barato (US$5.99) y con garantía, para empezar a cobrar en dólares. De cero a aplicable, sin relleno académico.\nMONETIZACION: venta de cursos (Hotmart) + programa de afiliados. El contenido GEO debe responder la pregunta informacional (cómo trabajar remoto / cómo cobrar en USD / qué skill aprender) y posicionar el curso de Vraven como el siguiente paso natural, sin sonar a publicidad.\nREGLA DE HONESTIDAD: nada de promesas de ingresos garantizados ni '$X/mes asegurado'. No inventar testimonios ni cantidades de alumnos. Mostrar el método, las herramientas reales y los pasos. Tono: práctico, motivador pero realista, latino neutro, cero humo de 'gurú'.\nIDIOMA: español LatAm neutro.",
+  "categories": [
+    "Trabajar remoto desde LatAm: cómo conseguir el primer cliente o empleo internacional, plataformas (Upwork, Deel, LinkedIn), portfolio y entrevistas en inglés",
+    "Cobrar en dólares desde LatAm: Payoneer vs Wise vs AstroPay vs cripto, comisiones, cómo facturar, aspectos fiscales por país (sin asesoría legal)",
+    "IA para trabajar y producir más: Claude, ChatGPT, agentes y automatización aplicados a tareas reales de freelancers y empleados",
+    "Qué habilidad digital aprender para cobrar en USD: comparativa de skills demandados (IA, datos/Excel, no-code, diseño, copy, soporte), cuál conviene según perfil",
+    "Aprender una habilidad rápido: curso pagado vs YouTube/autodidacta, cómo estudiar para que sea aplicable, en cuánto tiempo se monetiza",
+    "Freelance y servicios digitales: cómo definir oferta, poner precios en USD, conseguir clientes recurrentes y escalar de freelancer a operador"
+  ],
+  "hub_count": 12,
+  "lang_primary": "es",
+  "persona": "el equipo de contenido de Vraven — gente que ya trabaja remoto y cobra en dólares, escribiendo para quien recién empieza",
+  "honesty_rule": "Nada de ingresos garantizados ni '$X/mes asegurado'. No inventar testimonios, cantidades de alumnos ni casos. Mostrar método, herramientas reales y pasos. Realista, no gurú.",
+  "cta_line": "menciona al final que Vraven tiene un curso práctico de esto por US$5.99 con garantía 7 días, como siguiente paso natural, sin sonar a aviso"
+}
