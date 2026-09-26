@@ -125,6 +125,15 @@ def _propomi_link(cfg, hub, slug, extra_utm=""):
     if extra_utm: href += extra_utm
     return href
 
+# Tipos validos del buscador (ver PROPERTY_TYPES en apps/web/app/page.tsx del
+# repo Propomi) usados para la grilla de directorio interno.
+PROPOMI_PROPERTY_TYPES = ["Departamento", "Casa", "Terreno", "Local"]
+
+def _propomi_link_typed(cfg, hub, slug, property_type):
+    href = _propomi_link(cfg, hub, slug)
+    sep = "&" if "?" in href else "?"
+    return f"{href}{sep}type={quote(property_type)}"
+
 def _propomi_callout(cfg, hub, slug, label):
     href = _propomi_link(cfg, hub, slug)
     city = esc(hub.get("city") or hub.get("h1") or "")
@@ -169,6 +178,36 @@ def render_article(cfg, a, related, all_hubs=None):
         )
         if items:
             otras_zonas = f'<div class="related otras-zonas"><h3>Buscar propiedades en otras zonas</h3>{items}</div>'
+    # Directorio interno: grilla ciudad x tipo de propiedad (todo el set de
+    # hubs, no solo el propio) + zonas/barrios reales de la propia ciudad
+    # (tomados de la comparison_table ya escrita, primera columna = nombre de
+    # zona en TODOS los articulos) + paises. Todo contextual (URLs reales de
+    # busqueda), pensado para acercar el conteo de links por pagina a un
+    # numero alto pero seguro (~90, lejos del limite practico de ~100 que
+    # recomienda Google) sin inventar contenido ni romper la estructura.
+    directorio = ""
+    if all_hubs and cfg.get("propomi_links"):
+        grid_items = "".join(
+            f'<a href="{esc(_propomi_link_typed(cfg, h, slug, t))}">{esc(t)} en {esc(h.get("city") or "")}</a>'
+            for h in all_hubs for t in PROPOMI_PROPERTY_TYPES
+        )
+        zone_names = [row[0] for row in (a.get("comparison_table", {}).get("rows") or []) if row]
+        zone_items = "".join(
+            f'<a href="{esc(_propomi_link(cfg, {**hub, "zone": zn}, slug))}">{esc(zn)}</a>'
+            for zn in zone_names
+        )
+        countries = sorted({h.get("country") for h in all_hubs if h.get("country")})
+        country_items = "".join(
+            f'<a href="/buscar?country={quote(c)}">Propiedades en {esc(c)}</a>' for c in countries
+        )
+        directorio = (
+            '<div class="related directorio">'
+            f'<h3>Directorio: propiedades por ciudad y tipo</h3>{grid_items}</div>'
+            '<div class="related directorio">'
+            f'<h3>Zonas de {esc(hub.get("city") or "")}</h3>{zone_items}</div>'
+            '<div class="related directorio">'
+            f'<h3>Buscar por país</h3>{country_items}</div>'
+        )
     ec=cfg["endcta"]
     ec_title=ec["title"].format(city=hub.get("city") or hub.get("h1") or "")
     btn_href=ec["btn_href_tmpl"].format(slug=quote(slug), country=quote(hub.get("country") or ""), city=quote(hub.get("city") or ""))
@@ -209,6 +248,7 @@ def render_article(cfg, a, related, all_hubs=None):
   <div class="defs">{defs}</div>
   <div class="related"><h3>Recursos relacionados</h3>{rel}</div>
   {otras_zonas}
+  {directorio}
   <div class="endcta"><h3>{esc(ec_title)}</h3><p>{esc(ec["body"])}</p><a class="btn" href="{esc(btn_href)}">{esc(ec["btn_label"])}</a></div>
   <p class="byline">Por <b>{esc(cfg["author"]["name"])}</b> · {esc(cfg.get("author",{}).get("jobTitle",""))} · {cfg.get("date","2026-05-31")}</p>
 </div>
