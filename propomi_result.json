@@ -483,6 +483,282 @@
         "city": "Córdoba",
         "zone": ""
       }
+    },
+    {
+      "meta_description": "Guía de zona de Mendoza: mercado inmobiliario, vida de barrio y la conexión directa entre vivir ahí y la región vitivinícola que rodea la ciudad.",
+      "short_answer": "Mendoza capital es una ciudad chica y muy arbolada, con un mercado inmobiliario que se reparte entre el centro (Ciudad, Godoy Cruz) para perfil urbano y los alrededores (Chacras de Coria, Luján de Cuyo) para quien busca casa con más verde y cercanía a bodegas.",
+      "medium_answer": "El centro de Mendoza y Godoy Cruz concentran la demanda de departamentos, con edificios de baja altura por norma antisísmica y calles arboladas con acequias que bajan agua de riego desde la cordillera. Chacras de Coria, en Luján de Cuyo, es la zona preferida por quien busca casa con jardín, terreno más grande y proximidad directa a bodegas y restaurantes gastronómicos de nivel. Godoy Cruz también funciona como zona de transición entre el perfil urbano del centro y el residencial de las afueras.",
+      "bullets": [
+        "Las acequias (canales de riego a los costados de las calles) son parte de la infraestructura urbana histórica de Mendoza, no solo estética.",
+        "La normativa antisísmica limita la altura de los edificios en gran parte de la ciudad — perfil urbano más bajo que otras capitales.",
+        "Chacras de Coria (Luján de Cuyo) es la zona de referencia para quien busca casa con jardín cerca de bodegas.",
+        "El Parque General San Martín es uno de los espacios verdes urbanos más grandes de Argentina, a pocas cuadras del centro.",
+        "La región vitivinícola (Luján de Cuyo, Maipú, Valle de Uco) está a 20-60 minutos en auto del centro según la zona.",
+        "Mendoza tiene un clima seco y muy soleado casi todo el año, con una amplitud térmica marcada entre día y noche."
+      ],
+      "sections": [
+        {
+          "h2": "El mercado inmobiliario, entre ciudad y bodegas",
+          "body_html": "<p>El centro de Mendoza y Godoy Cruz son la zona de mayor movimiento de departamentos, con una oferta marcada por la baja altura de los edificios (norma antisísmica) y las calles arboladas típicas de la ciudad. Es un mercado orientado a perfil urbano: profesionales, estudiantes y quienes priorizan estar cerca de oficinas y comercio.</p><p>Chacras de Coria, dentro del departamento de Luján de Cuyo, es la zona más buscada por quien quiere casa con jardín sin alejarse demasiado de la ciudad, y tiene el plus de estar a minutos de bodegas reconocidas y de una oferta gastronómica de nivel — un combo que atrae tanto a mendocinos como a compradores de otras provincias.</p>"
+        },
+        {
+          "h2": "Vida de barrio: acequias, arboleda y Parque San Martín",
+          "body_html": "<p>Una de las señas de identidad de Mendoza son las acequias: canales de riego a los costados de las veredas que bajan agua de deshielo desde la cordillera, y que sostienen la enorme arboleda de la ciudad (un rasgo urbano poco común en el resto de Argentina). Esto hace que caminar por el centro o por Godoy Cruz en verano sea notablemente más fresco que en otras ciudades sin esa cobertura de sombra.</p><p>El Parque General San Martín, diseñado también por Carlos Thays, es uno de los pulmones verdes urbanos más grandes del país, con lago, cerro de la Gloria y el autódromo — funciona como punto de encuentro de fin de semana para toda la ciudad.</p><ul><li>Acequias y arboleda: rasgo distintivo del microclima urbano.</li><li>Baja altura edilicia por normativa antisísmica.</li><li>Parque San Martín como pulmón verde central.</li></ul>"
+        },
+        {
+          "h2": "Qué conocer antes de mudarte a Mendoza",
+          "body_html": "<p>El clima mendocino es seco, soleado y con mucha amplitud térmica entre el día y la noche — algo a tener en cuenta para quien viene de zonas más húmedas. La ciudad es chica y bien conectada: moverse del centro a Godoy Cruz o Las Heras no toma mucho tiempo, aunque para llegar a zonas como Chacras de Coria o Maipú el auto facilita bastante.</p><p>Para quien evalúa invertir pensando en la región vitivinícola, vale diferenciar: vivir en la ciudad y visitar bodegas los fines de semana es un perfil de vida distinto a vivir directamente en Luján de Cuyo o Maipú, más cerca de las fincas pero más lejos del movimiento urbano diario.</p>"
+        },
+        {
+          "h2": "Turismo y actividades que conectan con la vida en Mendoza",
+          "body_html": "<p>La región vitivinícola es el gran diferencial de vivir en Mendoza: Luján de Cuyo, Maipú y el Valle de Uco concentran bodegas que reciben visitas todo el año, muchas con restaurantes propios — algo que los mendocinos incorporan como salida habitual, no solo como paseo para visitantes. El Parque General San Martín, además de espacio verde, tiene el Cerro de la Gloria con mirador a toda la ciudad.</p><p>La cercanía a la cordillera también habilita escapadas cortas hacia Potrerillos o Uspallata, zonas de montaña a menos de una hora en auto — parte de por qué mucha gente elige Mendoza para combinar vida urbana con acceso rápido a naturaleza.</p>"
+        }
+      ],
+      "comparison_table": {
+        "caption": "Perfil de zonas de Mendoza según qué busca el comprador/inquilino",
+        "headers": [
+          "Zona",
+          "Perfil típico",
+          "Fortaleza principal"
+        ],
+        "rows": [
+          [
+            "Centro (Ciudad de Mendoza)",
+            "Perfil urbano, profesionales y estudiantes",
+            "Comercio, oficinas, vida cultural"
+          ],
+          [
+            "Godoy Cruz",
+            "Familias y perfil urbano medio",
+            "Buena conexión con el centro"
+          ],
+          [
+            "Chacras de Coria (Luján de Cuyo)",
+            "Familias, perfil de mayor poder adquisitivo",
+            "Casas con jardín, cercanía a bodegas"
+          ],
+          [
+            "Las Heras",
+            "Perfil residencial medio",
+            "Cercanía a la Precordillera"
+          ],
+          [
+            "Maipú",
+            "Perfil rural/vitivinícola",
+            "Fincas y bodegas, vida más de pueblo"
+          ]
+        ]
+      },
+      "faqs": [
+        {
+          "q": "¿Por qué las calles de Mendoza tienen canales a los costados?",
+          "a": "Son las acequias, un sistema de riego histórico que baja agua de deshielo desde la cordillera y sostiene la arboleda de la ciudad, un rasgo distintivo del paisaje urbano mendocino."
+        },
+        {
+          "q": "¿Chacras de Coria es parte de la ciudad de Mendoza?",
+          "a": "Es una localidad del departamento de Luján de Cuyo, a pocos minutos del centro de la capital, muy buscada por quien quiere casa con jardín cerca de bodegas."
+        },
+        {
+          "q": "¿Por qué los edificios de Mendoza son bajos?",
+          "a": "Por normativa antisísmica de la provincia, que limita la altura de construcción en gran parte de la ciudad — un perfil urbano distinto al de otras capitales argentinas."
+        },
+        {
+          "q": "¿Qué tan lejos están las bodegas del centro de Mendoza?",
+          "a": "Depende de la zona: algunas bodegas de Luján de Cuyo están a 20-30 minutos del centro, mientras que el Valle de Uco puede tomar entre 1 y 1.5 horas en auto."
+        },
+        {
+          "q": "¿Cómo es el clima en Mendoza capital?",
+          "a": "Seco y muy soleado la mayor parte del año, con una amplitud térmica marcada entre el día y la noche, típica de zonas de pie de cordillera."
+        },
+        {
+          "q": "¿Se puede vivir en Mendoza sin auto?",
+          "a": "En el centro y Godoy Cruz es viable con transporte público y bicicleta; para zonas como Chacras de Coria o Maipú el auto facilita mucho más la vida diaria."
+        },
+        {
+          "q": "¿Qué es el Parque General San Martín?",
+          "a": "Uno de los parques urbanos más grandes de Argentina, diseñado por Carlos Thays, con lago, cerro con mirador y el autódromo de la ciudad."
+        },
+        {
+          "q": "¿Conviene vivir en Maipú o en la ciudad de Mendoza?",
+          "a": "Maipú tiene un perfil más rural/vitivinícola con fincas y bodegas, mientras que la ciudad de Mendoza ofrece más vida urbana, comercio y oferta cultural — la elección depende del ritmo de vida que se busque."
+        }
+      ],
+      "definitions": [
+        {
+          "term": "Acequia",
+          "definition": "Canal de riego a los costados de las calles mendocinas que baja agua de deshielo de la cordillera y sostiene la arboleda urbana."
+        },
+        {
+          "term": "Precordillera",
+          "definition": "Cadena montañosa menor ubicada entre la llanura y la Cordillera de los Andes, visible desde buena parte de Mendoza capital."
+        },
+        {
+          "term": "Valle de Uco",
+          "definition": "Región vitivinícola al sur de Mendoza capital, conocida por bodegas de altura y paisajes de viñedos con la cordillera de fondo."
+        },
+        {
+          "term": "Departamento (Mendoza)",
+          "definition": "División administrativa provincial (ej. Luján de Cuyo, Maipú, Godoy Cruz) equivalente a un municipio, distinta del uso 'departamento' como vivienda."
+        }
+      ],
+      "social": {
+        "linkedin_es": "Mendoza tiene algo que casi ninguna otra capital argentina tiene: acequias con agua de deshielo corriendo por cada calle, y bodegas a 20 minutos del centro. Armamos una guía real de zona (Ciudad, Godoy Cruz, Chacras de Coria) pensada para quien evalúa mudarse o invertir ahí, sin vender la ciudad como postal turística. La subimos a Propomi, con datos de zona reales.",
+        "twitter_es": "Mendoza: acequias con agua de deshielo en cada calle + bodegas a 20 min del centro.\n\nGuía real de zona (Ciudad, Godoy Cruz, Chacras de Coria) para quien piensa mudarse.",
+        "twitter_en": "Mendoza: irrigation canals with snowmelt water on every street + wineries 20 min from downtown.\n\nReal zone guide for anyone considering moving there."
+      },
+      "slug": "mendoza-argentina",
+      "title": "Vivir en Mendoza: guía de zona y mercado inmobiliario",
+      "_hub": {
+        "slug": "mendoza-argentina",
+        "title": "Vivir en Mendoza: guía de zona y mercado inmobiliario",
+        "h1": "Guía de zona: Mendoza",
+        "primary_query_es": "como es vivir en Mendoza",
+        "primary_query_en": "what is it like living in Mendoza",
+        "intent": "long-tail",
+        "content_angle": "guía de zona de Mendoza: mercado inmobiliario, vida de barrio y turismo conectable",
+        "priority": "P1",
+        "country": "Argentina",
+        "city": "Mendoza",
+        "zone": ""
+      }
+    },
+    {
+      "meta_description": "Guía de zona de Rosario: mercado inmobiliario frente al río Paraná, vida de barrio y qué conocer antes de mudarte a la ciudad natal de Messi y el Che Guevara.",
+      "short_answer": "Rosario es una ciudad ribereña sobre el río Paraná, con un mercado inmobiliario que se divide entre torres nuevas frente a la costa (Puerto Norte) y barrios residenciales más tradicionales como Fisherton o Barrio Martin (zona norte), además del centro histórico.",
+      "medium_answer": "Puerto Norte, la zona de exdársenas portuarias reconvertidas frente al río, concentra la construcción más nueva de la ciudad, con torres y vista al Paraná. El centro rosarino, con el Monumento a la Bandera como ícono, mantiene el perfil más denso y comercial. Zona norte (Fisherton) es la preferida por familias que buscan casas con más espacio y un ritmo más tranquilo, mientras que el sur de la ciudad tiene un perfil más popular e industrial. La Costanera, que corre a lo largo del río, es el eje recreativo más importante de la ciudad.",
+      "bullets": [
+        "Puerto Norte es la zona de mayor desarrollo inmobiliario nuevo, con torres frente al río Paraná sobre ex terrenos portuarios.",
+        "El Monumento a la Bandera, sobre el río, es el ícono más reconocible de la ciudad y punto de referencia del centro.",
+        "La Costanera rosarina se extiende varios kilómetros a lo largo del río, con parques, playas de arena y espacios de uso público.",
+        "Fisherton, en zona norte, es el barrio preferido por familias que buscan casas con jardín y un ritmo más residencial.",
+        "Rosario es la ciudad natal de Lionel Messi y del Che Guevara, algo que forma parte de su identidad cultural cotidiana.",
+        "La Isla de los Inventos y el Parque de España forman parte del circuito cultural sobre la Costanera."
+      ],
+      "sections": [
+        {
+          "h2": "El mercado inmobiliario frente al río",
+          "body_html": "<p>Puerto Norte transformó el perfil inmobiliario de Rosario en las últimas dos décadas: donde antes había dársenas portuarias en desuso, hoy hay torres modernas con vista al Paraná, dirigidas a un perfil de comprador que valora la cercanía al río y a los espacios verdes de la Costanera. Es la zona de mayor plusvalía reciente de la ciudad.</p><p>El centro tradicional mantiene el perfil más denso y comercial, mientras que zona norte (Fisherton, Alberdi) ofrece un mercado más orientado a casas y familias, con menor densidad y más espacio verde privado.</p>"
+        },
+        {
+          "h2": "Vida de barrio: la Costanera como columna vertebral",
+          "body_html": "<p>La Costanera de Rosario corre a lo largo de varios kilómetros junto al río Paraná, y funciona como el espacio público más usado de la ciudad: hay tramos con playas de arena, parques, ciclovías y espacios culturales como el Parque de España y la Isla de los Inventos. Para buena parte de los rosarinos, caminar o andar en bici por la Costanera es una rutina semanal, no solo un paseo ocasional.</p><p>El centro mantiene el perfil comercial y de oficinas más denso, con el Monumento a la Bandera como cierre visual de la avenida principal hacia el río.</p><ul><li>Costanera extensa con playas de arena, parques y ciclovías.</li><li>Centro comercial denso con el Monumento a la Bandera como cierre hacia el río.</li><li>Zona norte más residencial y familiar (Fisherton, Alberdi).</li></ul>"
+        },
+        {
+          "h2": "Qué conocer antes de mudarte a Rosario",
+          "body_html": "<p>Rosario tiene un clima templado-húmedo, con veranos calurosos donde la Costanera y sus playas de río se vuelven un punto de encuentro masivo. El transporte público cubre bien el centro y las zonas cercanas al río, aunque para zona norte (Fisherton) o zona sur el auto facilita bastante la rutina diaria.</p><p>Para quien busca invertir, Puerto Norte sigue siendo la zona de mayor demanda por su perfil de torres nuevas frente al río, aunque también es la de precio más alto por metro cuadrado de la ciudad.</p>"
+        },
+        {
+          "h2": "Identidad rosarina: Messi, el Che y el río",
+          "body_html": "<p>Rosario es la ciudad natal de Lionel Messi y del Che Guevara, algo que forma parte real de la identidad cotidiana de la ciudad (murales, referencias culturales, orgullo local) más que un dato solo turístico. El Monumento a la Bandera, sobre el río, es el punto de referencia geográfico y simbólico más importante, con mirador desde su torre.</p><p>La combinación de identidad cultural fuerte + acceso directo al río + Costanera extensa es parte de por qué Rosario sostiene un mercado inmobiliario activo pese a no ser la capital de su provincia (Santa Fe capital es la capital administrativa).</p>"
+        }
+      ],
+      "comparison_table": {
+        "caption": "Perfil de zonas de Rosario según qué busca el comprador/inquilino",
+        "headers": [
+          "Zona",
+          "Perfil típico",
+          "Fortaleza principal"
+        ],
+        "rows": [
+          [
+            "Puerto Norte",
+            "Perfil de inversión y compradores de categoría",
+            "Torres nuevas con vista al río"
+          ],
+          [
+            "Centro",
+            "Perfil urbano, comercio y oficinas",
+            "Densidad, cercanía al Monumento a la Bandera"
+          ],
+          [
+            "Fisherton (zona norte)",
+            "Familias, perfil residencial",
+            "Casas con jardín, más tranquilidad"
+          ],
+          [
+            "Alberdi",
+            "Perfil mixto, cercano al río",
+            "Identidad de barrio, cercanía a la Costanera norte"
+          ],
+          [
+            "Zona sur",
+            "Perfil popular e industrial",
+            "Menor costo relativo"
+          ]
+        ]
+      },
+      "faqs": [
+        {
+          "q": "¿Qué es Puerto Norte en Rosario?",
+          "a": "Es la zona de exdársenas portuarias reconvertidas en torres residenciales frente al río Paraná, hoy la zona de mayor desarrollo inmobiliario nuevo de la ciudad."
+        },
+        {
+          "q": "¿Rosario es capital de la provincia de Santa Fe?",
+          "a": "No, la capital administrativa es la ciudad de Santa Fe, aunque Rosario es la ciudad más poblada y de mayor peso económico de la provincia."
+        },
+        {
+          "q": "¿Qué barrio conviene para familias en Rosario?",
+          "a": "Fisherton, en zona norte, es el más buscado por familias que priorizan casas con jardín y un ritmo más tranquilo que el centro."
+        },
+        {
+          "q": "¿Se puede ir a la playa en Rosario?",
+          "a": "Sí, la Costanera tiene tramos con playas de arena sobre el río Paraná, muy usadas en los meses de verano."
+        },
+        {
+          "q": "¿Por qué Rosario tiene tanta identidad con el Che Guevara y Messi?",
+          "a": "Ambos nacieron en la ciudad, y esa conexión forma parte de la identidad cultural cotidiana rosarina, visible en murales y referencias urbanas."
+        },
+        {
+          "q": "¿Cómo es moverse por Rosario sin auto?",
+          "a": "El centro y las zonas cercanas al río tienen buena cobertura de transporte público y ciclovías; para zona norte o sur el auto facilita más la rutina diaria."
+        },
+        {
+          "q": "¿Qué es el Monumento a la Bandera?",
+          "a": "Es el monumento más emblemático de Rosario, ubicado sobre la costa del río Paraná, con mirador en su torre y una gran explanada pública."
+        },
+        {
+          "q": "¿Puerto Norte es la zona más cara de Rosario?",
+          "a": "Suele ser la de mayor valor por metro cuadrado por su perfil de torres nuevas con vista al río, aunque el centro y algunas zonas de Fisherton también tienen buena cotización."
+        }
+      ],
+      "definitions": [
+        {
+          "term": "Costanera",
+          "definition": "Avenida y espacio público a lo largo del río Paraná en Rosario, con parques, playas de arena y ciclovías en varios tramos."
+        },
+        {
+          "term": "Puerto Norte",
+          "definition": "Zona de exdársenas portuarias reconvertidas en desarrollos residenciales frente al río, al norte del centro de Rosario."
+        },
+        {
+          "term": "Fisherton",
+          "definition": "Barrio residencial de zona norte de Rosario, de perfil familiar y con casas de mayor tamaño relativo."
+        },
+        {
+          "term": "Río Paraná",
+          "definition": "Uno de los ríos más grandes de Sudamérica, que bordea la costa este de Rosario y define buena parte de la identidad urbana de la ciudad."
+        }
+      ],
+      "social": {
+        "linkedin_es": "Rosario tiene algo que pocas ciudades del interior argentino tienen: kilómetros de costanera con playas de río, y una identidad cultural fortísima (Messi, el Che) que se siente caminando por la ciudad. Armamos una guía real de zona, desde Puerto Norte hasta Fisherton, para quien evalúa mudarse o invertir ahí. La subimos a Propomi con foco en lo que realmente diferencia a cada barrio.",
+        "twitter_es": "Rosario: kilómetros de costanera con playas de río + identidad cultural fuerte (Messi, el Che).\n\nGuía real de zona, de Puerto Norte a Fisherton.",
+        "twitter_en": "Rosario, Argentina: miles of riverside coast with beaches + strong local culture (Messi, Che Guevara).\n\nReal zone guide, from Puerto Norte to Fisherton."
+      },
+      "slug": "rosario-argentina",
+      "title": "Vivir en Rosario: guía de zona y mercado inmobiliario",
+      "_hub": {
+        "slug": "rosario-argentina",
+        "title": "Vivir en Rosario: guía de zona y mercado inmobiliario",
+        "h1": "Guía de zona: Rosario",
+        "primary_query_es": "como es vivir en Rosario",
+        "primary_query_en": "what is it like living in Rosario",
+        "intent": "long-tail",
+        "content_angle": "guía de zona de Rosario: mercado inmobiliario, vida de barrio y turismo conectable",
+        "priority": "P1",
+        "country": "Argentina",
+        "city": "Rosario",
+        "zone": ""
+      }
     }
   ],
   "query_count": 0,
