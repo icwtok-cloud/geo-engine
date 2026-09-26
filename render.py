@@ -26,28 +26,28 @@ a{{color:{t["accent"]};text-decoration:none}}a:hover{{text-decoration:underline}
 .controls{{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}}
 .controls a{{font-size:12.5px;font-weight:700;color:{t["muted"]}}}
 .controls .cta{{background:{t["accent"]};color:{t["bg"]};padding:8px 15px;border-radius:8px;white-space:nowrap}}
-.controls .cta:hover{{background:#fff;text-decoration:none}}
+.controls .cta:hover{{background:#fff;color:{t["text"]};text-decoration:none}}
 .wrap{{max-width:820px;margin:0 auto;padding:0 24px}}
 .crumb{{font-size:12px;color:{t["muted"]};padding:22px 0 0}}.crumb a{{color:{t["muted"]}}}
 .kicker{{display:inline-block;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:{t["accent2"]};font-weight:800;margin:26px 0 14px;padding:6px 13px;border:1px solid {t["border"]};border-radius:99px}}
-h1{{font-size:clamp(30px,4.6vw,44px);line-height:1.12;font-weight:900;color:#fff;letter-spacing:-.5px;margin-bottom:18px}}
-.answer{{background:linear-gradient(135deg,{t["accent"]}1a,{t["accent2"]}14);border:1px solid {t["accent"]};border-left:4px solid {t["accent"]};border-radius:12px;padding:20px 24px;margin:6px 0 26px;font-size:17px;color:#fff;font-weight:600}}
+h1{{font-size:clamp(30px,4.6vw,44px);line-height:1.12;font-weight:900;color:{t["text"]};letter-spacing:-.5px;margin-bottom:18px}}
+.answer{{background:linear-gradient(135deg,{t["accent"]}1a,{t["accent2"]}14);border:1px solid {t["accent"]};border-left:4px solid {t["accent"]};border-radius:12px;padding:20px 24px;margin:6px 0 26px;font-size:17px;color:{t["text"]};font-weight:600}}
 .lede{{font-size:16px;color:{t["textbody"]};margin-bottom:24px}}
 .bullets{{background:{t["card"]};border:1px solid {t["border"]};border-radius:12px;padding:20px 24px 20px 40px;margin:0 0 30px}}
 .bullets li{{margin:7px 0;color:{t["textbody"]};font-size:15px}}
-h2{{font-size:24px;font-weight:900;color:#fff;margin:36px 0 14px;letter-spacing:-.3px}}
+h2{{font-size:24px;font-weight:900;color:{t["text"]};margin:36px 0 14px;letter-spacing:-.3px}}
 h3{{font-size:18px;color:{t["accent"]};margin:20px 0 8px}}
 p{{margin:0 0 14px;color:{t["textbody"]};font-size:15.5px}}
 ul,ol{{margin:0 0 16px 22px}}li{{margin:6px 0;color:{t["textbody"]};font-size:15.5px}}
-strong{{color:#fff}}
+strong{{color:{t["text"]}}}
 table{{width:100%;border-collapse:collapse;margin:18px 0 28px;font-size:14px;background:{t["card"]};border:1px solid {t["border"]};border-radius:10px;overflow:hidden}}
 caption{{caption-side:top;text-align:left;color:{t["muted"]};font-size:13px;margin-bottom:8px;font-style:italic}}
-th{{background:{t["accent2"]}26;color:#fff;text-align:left;padding:11px 14px;font-weight:800;border-bottom:1px solid {t["border"]}}}
+th{{background:{t["accent2"]}26;color:{t["text"]};text-align:left;padding:11px 14px;font-weight:800;border-bottom:1px solid {t["border"]}}}
 td{{padding:10px 14px;border-bottom:1px solid {t["border"]};color:{t["textbody"]};vertical-align:top}}
 tr:last-child td{{border-bottom:none}}
 .faq{{margin:14px 0 30px}}
 .faq details{{border:1px solid {t["border"]};border-radius:10px;margin-bottom:10px;background:{t["card"]}}}
-.faq summary{{padding:15px 18px;font-weight:700;color:#fff;cursor:pointer;font-size:15.5px;list-style:none}}
+.faq summary{{padding:15px 18px;font-weight:700;color:{t["text"]};cursor:pointer;font-size:15.5px;list-style:none}}
 .faq summary::-webkit-details-marker{{display:none}}
 .faq summary::after{{content:"+";float:right;color:{t["accent"]};font-weight:900}}
 .faq details[open] summary::after{{content:"–"}}
@@ -56,12 +56,12 @@ tr:last-child td{{border-bottom:none}}
 .def{{border-left:3px solid {t["accent2"]};padding:4px 0 4px 16px}}
 .def b{{color:{t["accent"]};font-size:15px}}.def span{{display:block;color:{t["textbody"]};font-size:14.5px;margin-top:3px}}
 .related{{background:{t["card"]};border:1px solid {t["border"]};border-radius:12px;padding:20px 24px;margin:10px 0 26px}}
-.related h3{{color:#fff;margin:0 0 12px}}.related a{{display:block;padding:6px 0;font-size:14.5px;border-bottom:1px solid {t["border"]}}}.related a:last-child{{border:none}}
+.related h3{{color:{t["text"]};margin:0 0 12px}}.related a{{display:block;padding:6px 0;font-size:14.5px;border-bottom:1px solid {t["border"]}}}.related a:last-child{{border:none}}
 .endcta{{background:linear-gradient(135deg,{t["accent"]}1f,{t["accent2"]}1f);border:1px solid {t["accent"]};border-radius:14px;padding:28px 26px;margin:34px 0;text-align:center}}
 .endcta h3{{color:{t["accent"]};font-size:21px;margin-bottom:8px;border:none}}
 .endcta p{{color:{t["text"]};margin-bottom:16px}}
 .endcta .btn{{background:{t["accent"]};color:{t["bg"]};padding:12px 24px;border-radius:9px;font-weight:800;display:inline-block}}
-.endcta .btn:hover{{background:#fff;text-decoration:none}}
+.endcta .btn:hover{{background:#fff;color:{t["text"]};text-decoration:none}}
 .byline{{font-size:13px;color:{t["muted"]};margin:24px 0 6px;border-top:1px solid {t["border"]};padding-top:18px}}.byline b{{color:{t["accent"]}}}
 .propomi-inline{{margin:18px 0}}.propomi-inline a{{display:inline-block;font-weight:800;background:{t["accent"]}14;border:1px solid {t["accent"]};color:{t["accent"]};padding:9px 16px;border-radius:9px;font-size:14.5px}}.propomi-inline a:hover{{background:{t["accent"]};color:{t["bg"]};text-decoration:none}}
 footer{{padding:34px 26px;border-top:1px solid {t["border"]};text-align:center;font-size:12px;color:{t["muted"]};margin-top:30px}}footer a{{color:{t["accent"]};font-weight:700}}
@@ -281,7 +281,7 @@ def render_index(cfg, articles):
 .post{{background:{t["card"]};border:1px solid {t["border"]};border-radius:12px;padding:22px 24px;transition:.16s}}
 .post:hover{{border-color:{t["accent"]};transform:translateY(-2px)}}
 .post .tag{{display:inline-block;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:{t["accent2"]};font-weight:800;margin-bottom:8px;border:1px solid {t["accent2"]}66;padding:3px 9px;border-radius:99px}}
-.post h2{{font-size:20px;margin:0 0 8px}}.post h2 a{{color:#fff}}.post h2 a:hover{{color:{t["accent"]};text-decoration:none}}
+.post h2{{font-size:20px;margin:0 0 8px}}.post h2 a{{color:{t["text"]}}}.post h2 a:hover{{color:{t["accent"]};text-decoration:none}}
 .post p{{color:{t["textbody"]};font-size:14px;margin:0}}</style></head>
 <body>
 {nav_html(cfg)}
