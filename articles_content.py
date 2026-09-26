@@ -514,3 +514,113 @@ ARTICLES["monterrey-mexico"] = {
         "twitter_en": "Monterrey, Mexico: strong industrial culture + mountains minutes from downtown.\n\nReal zone guide (San Pedro, Del Valle, Cumbres).",
     },
 }
+
+ARTICLES["puebla-mexico"] = {
+    "meta_description": "Guía de zona de Puebla: mercado inmobiliario colonial, vida de barrio y qué conocer antes de mudarte o invertir en la cuarta ciudad más grande de México.",
+    "short_answer": "Puebla capital combina un centro histórico colonial declarado Patrimonio de la Humanidad con zonas residenciales modernas como Angelópolis, en fuerte expansión por su cercanía a universidades y desarrollos comerciales nuevos.",
+    "medium_answer": "El Centro Histórico de Puebla, con su trama colonial y los azulejos de talavera como sello distintivo, mantiene el perfil cultural e institucional de la ciudad. Angelópolis, hacia el sur, concentra el desarrollo inmobiliario más nuevo, con centros comerciales, universidades privadas y torres residenciales modernas. La Recta a Cholula conecta Puebla con el municipio de San Andrés Cholula, otra zona de fuerte crecimiento residencial y universitario.",
+    "bullets": [
+        "El Centro Histórico de Puebla es Patrimonio de la Humanidad por la UNESCO desde 1987.",
+        "Los azulejos de talavera poblana son un sello visual distintivo de la arquitectura del centro.",
+        "Angelópolis es la zona de mayor desarrollo inmobiliario nuevo, con universidades y centros comerciales.",
+        "Cholula, municipio vecino, tiene la pirámide más grande del mundo por volumen (la Gran Pirámide de Cholula) bajo un cerro.",
+        "Puebla es reconocida como cuna del mole poblano y de los chiles en nogada, parte fuerte de su identidad gastronómica.",
+        "La ciudad está a poco más de 2 horas de Ciudad de México, lo que la convierte en alternativa habitacional para quien trabaja remoto o viaja con frecuencia a la capital.",
+    ],
+    "sections": [
+        {"h2": "El mercado inmobiliario entre lo colonial y Angelópolis",
+         "body_html": "<p>El Centro Histórico mantiene el perfil institucional y patrimonial más fuerte de la ciudad, con edificios coloniales y la Catedral de Puebla como referencia, aunque con menor oferta de vivienda nueva por las restricciones de conservación patrimonial. Angelópolis, al sur de la ciudad, concentra el desarrollo más reciente: torres residenciales, centros comerciales grandes (Angelópolis, Paseo San Francisco) y universidades privadas de referencia regional.</p><p>La zona de la Recta a Cholula, que conecta con el municipio de San Andrés Cholula, también atrajo fuerte desarrollo residencial en la última década, en parte por la cercanía a universidades y a la vida nocturna vinculada a Cholula.</p>"},
+        {"h2": "Vida de barrio: talavera, mole y tradición colonial",
+         "body_html": "<p>Los azulejos de talavera, con su característico color azul y blanco, cubren fachadas de edificios coloniales en todo el centro y son parte del paisaje cotidiano de quien vive o trabaja ahí, no solo un souvenir turístico. El Zócalo poblano, con la Catedral, sigue siendo punto de encuentro central de la vida cívica de la ciudad.</p><p>Angelópolis ofrece un ritmo de vida mucho más moderno, con centros comerciales, restaurantes de cadena y universidades, un contraste marcado con el centro histórico a pocos kilómetros.</p><ul><li>Centro Histórico: patrimonio colonial vivo, no solo museográfico.</li><li>Angelópolis: desarrollo moderno, universidades, centros comerciales.</li><li>Cholula: vida universitaria y nocturna, cercanía a la Gran Pirámide.</li></ul>"},
+        {"h2": "Qué conocer antes de mudarte a Puebla",
+         "body_html": "<p>Puebla está a poco más de dos horas de Ciudad de México por autopista, lo que la convirtió en una alternativa habitacional real para quien trabaja de forma remota o viaja con frecuencia a la capital, buscando un costo de vida más accesible sin alejarse demasiado.</p><p>El clima poblano es templado, con una altitud similar a la de Ciudad de México, por lo que quien viene de zonas costeras puede notar el cambio de temperatura, especialmente por las noches.</p>"},
+        {"h2": "Turismo y patrimonio que conectan con la vida poblana",
+         "body_html": "<p>La Gran Pirámide de Cholula, la estructura piramidal de mayor volumen conocida en el mundo (hoy cubierta por un cerro con una iglesia en la cima), está a minutos de Angelópolis y es visitada tanto por turistas como por poblanos en salidas de fin de semana. El Centro Histórico, con sus iglesias barrocas y talleres de talavera, ofrece un circuito cultural que forma parte de la identidad cotidiana, no solo del circuito turístico.</p><p>La gastronomía poblana (mole, chiles en nogada, cemitas) es motivo de orgullo local real, con mercados y fondas tradicionales que los propios poblanos frecuentan, más allá de la oferta para visitantes.</p>"},
+    ],
+    "comparison_table": {
+        "caption": "Perfil de zonas de Puebla según qué busca el comprador/inquilino",
+        "headers": ["Zona", "Perfil típico", "Fortaleza principal"],
+        "rows": [
+            ["Centro Histórico", "Perfil cultural/institucional", "Patrimonio colonial, vida cívica"],
+            ["Angelópolis", "Familias y perfil universitario", "Desarrollo nuevo, centros comerciales"],
+            ["Recta a Cholula", "Perfil joven/universitario", "Cercanía a universidades y vida nocturna"],
+            ["Cholula", "Perfil universitario/turístico", "Identidad histórica, Gran Pirámide"],
+        ],
+    },
+    "faqs": [
+        {"q": "¿Por qué el Centro Histórico de Puebla es Patrimonio de la Humanidad?", "a": "Por su conjunto arquitectónico colonial bien conservado, incluidos edificios religiosos barrocos y la tradición de azulejos de talavera, declarado por la UNESCO en 1987."},
+        {"q": "¿Qué es Angelópolis?", "a": "La zona de mayor desarrollo inmobiliario reciente de Puebla, al sur de la ciudad, con universidades privadas, centros comerciales y torres residenciales modernas."},
+        {"q": "¿Cholula es parte de Puebla capital?", "a": "Es un municipio vecino (San Andrés Cholula / San Pedro Cholula), conurbado con Puebla, conocido por su vida universitaria y por la Gran Pirámide de Cholula."},
+        {"q": "¿Qué tan lejos está Puebla de Ciudad de México?", "a": "Poco más de 2 horas por autopista, lo que la convirtió en alternativa habitacional para quien trabaja remoto o viaja seguido a la capital."},
+        {"q": "¿Qué es la talavera poblana?", "a": "Una técnica de cerámica esmaltada con denominación de origen, característica de Puebla, visible en azulejos de fachadas y objetos decorativos en todo el centro histórico."},
+        {"q": "¿Cuál es la pirámide más grande del mundo?", "a": "La Gran Pirámide de Cholula, cerca de Puebla, es la estructura piramidal de mayor volumen conocida, aunque hoy está cubierta por un cerro con una iglesia colonial en la cima."},
+        {"q": "¿Qué platillos son típicos de Puebla?", "a": "El mole poblano y los chiles en nogada son los platillos más representativos de la gastronomía de la ciudad, junto con la cemita como sándwich tradicional."},
+        {"q": "¿Angelópolis es buena zona para invertir?", "a": "Es la zona de mayor demanda de vivienda nueva de la ciudad, impulsada por universidades y desarrollo comercial, aunque también la de mayor competencia entre desarrolladores."},
+    ],
+    "definitions": [
+        {"term": "Talavera poblana", "definition": "Técnica de cerámica esmaltada con denominación de origen, típica de Puebla, usada en azulejos y objetos decorativos."},
+        {"term": "Angelópolis", "definition": "Zona de desarrollo urbano al sur de Puebla capital, con universidades, centros comerciales y vivienda de construcción reciente."},
+        {"term": "Gran Pirámide de Cholula", "definition": "Estructura piramidal prehispánica de gran volumen ubicada en Cholula, hoy cubierta por un cerro con una iglesia colonial en la cima."},
+        {"term": "Cemita", "definition": "Sándwich tradicional poblano, servido en un pan especial con ajonjolí, típicamente relleno de milanesa, queso y aguacate."},
+    ],
+    "social": {
+        "linkedin_es": "Puebla combina un centro histórico colonial Patrimonio de la Humanidad con Angelópolis, la zona de desarrollo más nueva de la ciudad, a pocos kilómetros de distancia. Armamos una guía real de zona para quien evalúa mudarse o invertir ahí, incluida la cercanía real a CDMX. La subimos a Propomi.",
+        "twitter_es": "Puebla: centro colonial Patrimonio de la Humanidad + Angelópolis, la zona de desarrollo más nueva.\n\nGuía real de zona, a 2 horas de CDMX.",
+        "twitter_en": "Puebla, Mexico: colonial World Heritage downtown + Angelópolis, the newest development zone.\n\nReal zone guide, 2 hours from Mexico City.",
+    },
+}
+
+ARTICLES["queretaro-mexico"] = {
+    "meta_description": "Guía de zona de Querétaro: mercado inmobiliario industrial en expansión, centro colonial Patrimonio de la Humanidad y qué conocer antes de mudarte o invertir.",
+    "short_answer": "Querétaro es una de las ciudades de mayor crecimiento económico e inmobiliario de México en la última década, con un centro histórico colonial muy bien conservado y zonas de fuerte desarrollo industrial y residencial como Juriquilla y El Refugio.",
+    "medium_answer": "El Centro Histórico de Querétaro, Patrimonio de la Humanidad, mantiene calles peatonales y arquitectura colonial muy bien preservada. Juriquilla, al norte de la ciudad, concentra desarrollo residencial de perfil medio-alto ligado a universidades y parques industriales cercanos. Querétaro se consolidó como uno de los principales polos de la industria aeroespacial y automotriz de México, lo que sostuvo un crecimiento poblacional e inmobiliario sostenido en los últimos 15 años.",
+    "bullets": [
+        "El Centro Histórico de Querétaro es Patrimonio de la Humanidad por la UNESCO desde 1996.",
+        "Juriquilla es la zona de mayor desarrollo residencial reciente, ligada a universidades y parques industriales.",
+        "Querétaro es uno de los polos aeroespaciales y automotrices más importantes de México.",
+        "El Acueducto de Querétaro, con sus arcos de cantera, es el ícono arquitectónico más reconocible de la ciudad.",
+        "La ciudad es reconocida por su bajo índice de criminalidad relativo comparado con otras zonas metropolitanas grandes de México.",
+        "Está a menos de 3 horas de Ciudad de México, con buena conexión de autopista.",
+    ],
+    "sections": [
+        {"h2": "El mercado inmobiliario de una ciudad en fuerte crecimiento",
+         "body_html": "<p>Querétaro es, junto con Guadalajara y Monterrey, una de las ciudades mexicanas de mayor crecimiento inmobiliario de la última década, impulsado por su consolidación como polo industrial (aeroespacial, automotriz) y por su percepción de mayor seguridad relativa frente a otras zonas metropolitanas. Juriquilla, al norte, concentra buena parte de ese desarrollo residencial nuevo, con fraccionamientos cerrados y cercanía a universidades y parques industriales.</p><p>El Centro Histórico mantiene un mercado distinto, más ligado al perfil cultural, institucional y de alquiler temporario turístico, con restricciones de construcción por su condición de Patrimonio de la Humanidad.</p>"},
+        {"h2": "Vida de barrio: del acueducto colonial a los parques industriales",
+         "body_html": "<p>El Acueducto de Querétaro, con sus arcos de cantera del siglo XVIII, es el símbolo más reconocible de la ciudad y parte del recorrido cotidiano de quien vive cerca del centro. Las calles peatonales del centro histórico, con plazas y jardines bien conservados, sostienen una vida de barrio caminable poco común en ciudades de crecimiento tan acelerado.</p><p>Juriquilla, en contraste, tiene un perfil mucho más suburbano, con fraccionamientos cerrados, centros comerciales y colegios privados, pensado para familias que trabajan en los parques industriales cercanos.</p><ul><li>Centro histórico: patrimonio colonial caminable.</li><li>Juriquilla: perfil suburbano, familias, cercanía industrial.</li><li>Acueducto: símbolo visual y punto de referencia de toda la ciudad.</li></ul>"},
+        {"h2": "Qué conocer antes de mudarte a Querétaro",
+         "body_html": "<p>Querétaro suele mencionarse en comparaciones nacionales por su índice de criminalidad relativamente bajo frente a otras zonas metropolitanas grandes de México, un factor que pesó en la decisión de muchas empresas y familias que se mudaron a la ciudad en los últimos años.</p><p>El clima es templado y seco la mayor parte del año, y la cercanía a Ciudad de México (menos de 3 horas por autopista) la convirtió también en una opción para quien busca alejarse de la capital sin perder conexión directa.</p>"},
+        {"h2": "Turismo y patrimonio que conectan con la vida queretana",
+         "body_html": "<p>El Centro Histórico, con sus templos barrocos y el Acueducto como cierre visual, concentra el circuito patrimonial de la ciudad, con museos y plazas que forman parte de la vida cultural cotidiana, no solo del circuito turístico. La Sierra Gorda de Querétaro, más al norte del estado, ofrece naturaleza y misiones franciscanas también declaradas Patrimonio de la Humanidad, aunque a mayor distancia de la capital.</p><p>La combinación de patrimonio colonial + fuerte polo industrial + percepción de seguridad es clave para entender por qué Querétaro sostuvo uno de los crecimientos inmobiliarios más consistentes de México en los últimos 15 años.</p>"},
+    ],
+    "comparison_table": {
+        "caption": "Perfil de zonas de Querétaro según qué busca el comprador/inquilino",
+        "headers": ["Zona", "Perfil típico", "Fortaleza principal"],
+        "rows": [
+            ["Centro Histórico", "Perfil cultural/institucional", "Patrimonio colonial, vida peatonal"],
+            ["Juriquilla", "Familias de clase media-alta", "Fraccionamientos cerrados, cercanía industrial"],
+            ["El Refugio", "Familias, perfil residencial", "Desarrollo reciente, buena conexión"],
+            ["Zona industrial (Parque Bernardo Quintana y alrededores)", "Perfil corporativo/laboral", "Cercanía a plantas aeroespaciales/automotrices"],
+        ],
+    },
+    "faqs": [
+        {"q": "¿Por qué Querétaro creció tanto en la última década?", "a": "Por su consolidación como polo industrial (aeroespacial y automotriz) y por su percepción de mayor seguridad relativa frente a otras zonas metropolitanas grandes de México, lo que atrajo empresas, inversión y población nueva."},
+        {"q": "¿Qué es el Acueducto de Querétaro?", "a": "Una obra colonial del siglo XVIII con arcos de cantera que abastecía de agua a la ciudad, hoy el símbolo arquitectónico más reconocible de Querétaro."},
+        {"q": "¿Juriquilla es buena zona para familias?", "a": "Sí, es la zona de mayor desarrollo residencial reciente, con fraccionamientos cerrados, colegios privados y cercanía a parques industriales."},
+        {"q": "¿El Centro Histórico de Querétaro es Patrimonio de la Humanidad?", "a": "Sí, fue declarado por la UNESCO en 1996 por su trama colonial bien conservada y su valor histórico como sede de la firma de tratados relevantes para México."},
+        {"q": "¿Qué tan lejos está Querétaro de Ciudad de México?", "a": "Menos de 3 horas por autopista, lo que facilita tanto viajes de trabajo como mudanzas de quien busca alejarse de la capital sin perder conexión."},
+        {"q": "¿Qué industrias son fuertes en Querétaro?", "a": "La aeroespacial y la automotriz son las de mayor peso, con varias plantas y proveedores instalados en parques industriales de la zona metropolitana."},
+        {"q": "¿Cómo es el clima en Querétaro?", "a": "Templado y seco la mayor parte del año, con una altitud similar a la de otras ciudades del centro de México."},
+        {"q": "¿Qué es la Sierra Gorda de Querétaro?", "a": "Una región montañosa al norte del estado, con misiones franciscanas declaradas Patrimonio de la Humanidad, distinta de la capital pero dentro del mismo estado."},
+    ],
+    "definitions": [
+        {"term": "Acueducto de Querétaro", "definition": "Obra hidráulica colonial del siglo XVIII con arcos de cantera, símbolo arquitectónico de la ciudad."},
+        {"term": "Fraccionamiento", "definition": "Término mexicano para un desarrollo residencial cerrado o semicerrado, habitual en zonas de crecimiento reciente como Juriquilla."},
+        {"term": "Sierra Gorda", "definition": "Región montañosa al norte del estado de Querétaro, con misiones franciscanas declaradas Patrimonio de la Humanidad."},
+        {"term": "Parque industrial", "definition": "Zona destinada a plantas manufactureras y proveedores, frecuente en el corredor industrial que rodea la ciudad de Querétaro."},
+    ],
+    "social": {
+        "linkedin_es": "Querétaro es de las ciudades mexicanas que más creció en la última década, con un centro colonial Patrimonio de la Humanidad conviviendo con uno de los polos industriales más fuertes del país. Armamos una guía real de zona (centro, Juriquilla, corredor industrial) para quien evalúa mudarse o invertir ahí. La subimos a Propomi.",
+        "twitter_es": "Querétaro: centro colonial Patrimonio de la Humanidad + polo industrial (aeroespacial/automotriz) en pleno crecimiento.\n\nGuía real de zona.",
+        "twitter_en": "Querétaro, Mexico: colonial World Heritage downtown + booming industrial hub (aerospace/automotive).\n\nReal zone guide.",
+    },
+}
