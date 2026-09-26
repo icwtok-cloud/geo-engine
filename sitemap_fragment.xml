@@ -1,54 +1,84 @@
   <url>
-    <loc>https://alterego.lat/ideas</loc>
-    <lastmod>2026-05-31</lastmod>
+    <loc>https://propomi.lat/guias</loc>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alterego.lat/ideas/operador-ia-vs-agencia</loc>
-    <lastmod>2026-05-31</lastmod>
+    <loc>https://propomi.lat/guias/buenos-aires-argentina</loc>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alterego.lat/ideas/a-quien-contratar-automatizar-negocio-ia</loc>
-    <lastmod>2026-05-31</lastmod>
+    <loc>https://propomi.lat/guias/cordoba-argentina</loc>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alterego.lat/ideas/make-vs-python-vs-nocode-automatizacion-ia</loc>
-    <lastmod>2026-05-31</lastmod>
+    <loc>https://propomi.lat/guias/mendoza-argentina</loc>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alterego.lat/ideas/claude-code-vs-chatgpt-cursor-negocio</loc>
-    <lastmod>2026-05-31</lastmod>
+    <loc>https://propomi.lat/guias/rosario-argentina</loc>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alterego.lat/ideas/como-construir-vender-producto-solo-con-ia</loc>
-    <lastmod>2026-05-31</lastmod>
+    <loc>https://propomi.lat/guias/salta-argentina</loc>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alterego.lat/ideas/que-es-operador-producto-digital-ia</loc>
-    <lastmod>2026-05-31</lastmod>
+    <loc>https://propomi.lat/guias/la-plata-argentina</loc>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alterego.lat/ideas/automatizar-negocio-ia-por-donde-empezar</loc>
-    <lastmod>2026-05-31</lastmod>
+    <loc>https://propomi.lat/guias/ciudad-de-mexico-mexico</loc>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alterego.lat/ideas/operador-unico-ia-funciona-o-es-humo</loc>
-    <lastmod>2026-05-31</lastmod>
+    <loc>https://propomi.lat/guias/guadalajara-mexico</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://propomi.lat/guias/monterrey-mexico</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://propomi.lat/guias/puebla-mexico</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://propomi.lat/guias/queretaro-mexico</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://propomi.lat/guias/tijuana-mexico</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://propomi.lat/guias/zapopan-mexico</loc>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

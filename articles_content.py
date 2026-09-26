@@ -624,3 +624,113 @@ ARTICLES["queretaro-mexico"] = {
         "twitter_en": "Querétaro, Mexico: colonial World Heritage downtown + booming industrial hub (aerospace/automotive).\n\nReal zone guide.",
     },
 }
+
+ARTICLES["tijuana-mexico"] = {
+    "meta_description": "Guía de zona de Tijuana: mercado inmobiliario fronterizo, vida binacional con San Diego y qué conocer antes de mudarte o invertir en la frontera más cruzada del mundo.",
+    "short_answer": "Tijuana tiene un mercado inmobiliario marcado por su condición de ciudad fronteriza con Estados Unidos: zonas como Zona Río y Playas de Tijuana concentran la mayor demanda, con un perfil de residente que combina trabajo binacional y cruces frecuentes hacia San Diego.",
+    "medium_answer": "Zona Río, con su trama urbana más moderna y planificada, concentra oficinas, centros comerciales y torres residenciales de perfil medio-alto. Playas de Tijuana, sobre la costa, ofrece un perfil más residencial y turístico, con el famoso muro fronterizo terminando literalmente en el mar. La cercanía a San Diego —cruzada a diario por miles de personas por trabajo, estudio o compras— es la variable que más distingue el mercado inmobiliario de Tijuana del resto de las ciudades mexicanas de esta lista.",
+    "bullets": [
+        "Tijuana es una de las fronteras terrestres más cruzadas del mundo, con miles de cruces diarios hacia San Diego, California.",
+        "Zona Río es el corredor moderno de oficinas, centros comerciales y vivienda de perfil medio-alto.",
+        "Playas de Tijuana es la zona costera, donde el muro fronterizo se adentra visualmente en el mar.",
+        "La industria maquiladora (manufactura de exportación) es un motor económico histórico de la ciudad.",
+        "El Centro Cultural Tijuana (CECUT), con su icónica esfera, es referencia cultural de Zona Río.",
+        "La Avenida Revolución, en el centro, mantiene un perfil turístico y de vida nocturna histórico de la ciudad.",
+    ],
+    "sections": [
+        {"h2": "El mercado inmobiliario de una ciudad binacional",
+         "body_html": "<p>Zona Río, desarrollada con una traza urbana más ordenada que el resto de la ciudad, concentra la mayor oferta de oficinas corporativas, centros comerciales y vivienda vertical de perfil medio-alto. Es la zona preferida por quien trabaja en el sector de exportación/maquiladora o cruza con frecuencia a Estados Unidos por trabajo.</p><p>Playas de Tijuana, sobre la costa del Pacífico, ofrece un mercado distinto, con perfil más residencial y turístico, mientras que el centro (con la Avenida Revolución) mantiene su identidad histórica de vida nocturna y comercio, con menor demanda residencial relativa.</p>"},
+        {"h2": "Vida de barrio: la frontera como parte del día a día",
+         "body_html": "<p>Cruzar a San Diego para trabajar, estudiar o simplemente hacer compras es parte de la rutina de una porción significativa de la población tijuanense, algo poco común en el resto de las ciudades de esta guía. Esto genera una dinámica de vida binacional real, con negocios y servicios pensados para ese ir y venir constante.</p><p>El Centro Cultural Tijuana (CECUT), con su esfera-planetario característica, es un punto de referencia cultural en Zona Río, mientras que la Avenida Revolución en el centro histórico mantiene el perfil de vida nocturna y comercio tradicional de la ciudad.</p><ul><li>Cruce fronterizo diario: parte real de la rutina de muchos residentes.</li><li>Zona Río: corredor moderno de oficinas y centros comerciales.</li><li>Playas de Tijuana: perfil costero y residencial.</li></ul>"},
+        {"h2": "Qué conocer antes de mudarte a Tijuana",
+         "body_html": "<p>El clima de Tijuana es mediterráneo, más seco y templado que buena parte de México, con una fuerte influencia del océano Pacífico — un clima que muchos comparan favorablemente con el de San Diego, al otro lado de la frontera. El transporte público existe pero el auto es predominante para moverse entre zonas, especialmente hacia Playas o zonas industriales.</p><p>Para quien evalúa mudarse pensando en trabajo binacional, la cercanía a los cruces fronterizos (San Ysidro, Otay) es una variable clave a la hora de elegir zona, ya que los tiempos de espera pueden variar bastante según el cruce y el horario.</p>"},
+        {"h2": "Turismo y cultura en la frontera más cruzada del mundo",
+         "body_html": "<p>Playas de Tijuana, con el muro fronterizo internándose visualmente en el océano, es un punto de interés real y simbólico, además de zona residencial y recreativa con paseo marítimo. El Centro Cultural Tijuana, con exposiciones, IMAX y su arquitectura distintiva, es referencia cultural tanto para tijuanenses como para visitantes de San Diego que cruzan hacia el sur.</p><p>La Avenida Revolución, con su historia ligada al turismo estadounidense desde principios del siglo XX, sigue siendo un símbolo de la identidad fronteriza de la ciudad, aunque hoy convive con el perfil más corporativo y residencial de Zona Río.</p>"},
+    ],
+    "comparison_table": {
+        "caption": "Perfil de zonas de Tijuana según qué busca el comprador/inquilino",
+        "headers": ["Zona", "Perfil típico", "Fortaleza principal"],
+        "rows": [
+            ["Zona Río", "Perfil corporativo/binacional", "Oficinas, centros comerciales, torres nuevas"],
+            ["Playas de Tijuana", "Perfil residencial/costero", "Paseo marítimo, cercanía al océano"],
+            ["Centro (Av. Revolución)", "Perfil turístico/comercial histórico", "Vida nocturna, identidad fronteriza"],
+            ["Zona industrial (Otay)", "Perfil laboral/maquiladora", "Cercanía a plantas de exportación"],
+        ],
+    },
+    "faqs": [
+        {"q": "¿Por qué Tijuana es considerada la frontera más cruzada del mundo?", "a": "Por el enorme volumen diario de personas que cruzan entre Tijuana y San Diego por trabajo, estudio o comercio, a través de los cruces de San Ysidro y Otay, entre los más transitados del planeta."},
+        {"q": "¿Zona Río es la mejor zona para vivir en Tijuana?", "a": "Es la de mayor desarrollo corporativo y residencial moderno, con buena oferta de servicios, aunque Playas de Tijuana ofrece una alternativa más residencial y costera."},
+        {"q": "¿Se puede vivir en Tijuana y trabajar en San Diego?", "a": "Sí, es una dinámica habitual para parte de la población, aunque los tiempos de cruce fronterizo pueden variar mucho según el horario y el punto de cruce elegido."},
+        {"q": "¿Qué es el CECUT?", "a": "El Centro Cultural Tijuana, un espacio cultural en Zona Río reconocido por su arquitectura de esfera/planetario y su oferta de exposiciones y proyecciones IMAX."},
+        {"q": "¿Cómo es el clima en Tijuana?", "a": "Mediterráneo, más seco y templado que buena parte de México, con fuerte influencia del océano Pacífico, similar al de San Diego al otro lado de la frontera."},
+        {"q": "¿Qué es la industria maquiladora?", "a": "Manufactura de exportación (ensamblaje de productos para el mercado de Estados Unidos, principalmente), un motor económico histórico de la economía tijuanense."},
+        {"q": "¿Playas de Tijuana es buena zona para vivir?", "a": "Ofrece un perfil residencial más tranquilo y costero, con paseo marítimo, aunque algo más alejada de las zonas corporativas de Zona Río."},
+        {"q": "¿Qué es la Avenida Revolución?", "a": "La calle histórica del centro de Tijuana, ligada al turismo estadounidense desde principios del siglo XX, con vida nocturna y comercio tradicional."},
+    ],
+    "definitions": [
+        {"term": "Zona Río", "definition": "Corredor urbano moderno de Tijuana, con oficinas, centros comerciales y desarrollo residencial de perfil medio-alto."},
+        {"term": "Maquiladora", "definition": "Planta de manufactura de exportación, típicamente ensamblando productos para el mercado estadounidense, con fuerte presencia en Tijuana."},
+        {"term": "San Ysidro", "definition": "Uno de los cruces fronterizos peatonales y vehiculares más transitados del mundo, entre Tijuana y San Diego."},
+        {"term": "CECUT", "definition": "Centro Cultural Tijuana, espacio cultural reconocido por su arquitectura de esfera en Zona Río."},
+    ],
+    "social": {
+        "linkedin_es": "Tijuana tiene algo que ninguna otra ciudad de esta lista tiene: cruzar la frontera a San Diego es parte real de la rutina diaria de buena parte de sus residentes. Armamos una guía real de zona (Zona Río, Playas, centro) para quien evalúa mudarse o invertir en la frontera más cruzada del mundo. La subimos a Propomi.",
+        "twitter_es": "Tijuana: cruzar a San Diego es rutina diaria para buena parte de la ciudad.\n\nGuía real de zona (Zona Río, Playas, centro).",
+        "twitter_en": "Tijuana: crossing to San Diego is daily routine for much of the city.\n\nReal zone guide (Zona Río, Playas, downtown).",
+    },
+}
+
+ARTICLES["zapopan-mexico"] = {
+    "meta_description": "Guía de zona de Zapopan: mercado inmobiliario tecnológico, vida de barrio en el municipio más grande de la zona metropolitana de Guadalajara y qué conocer antes de mudarte.",
+    "short_answer": "Zapopan es el municipio conurbado más grande de la zona metropolitana de Guadalajara, con un mercado inmobiliario impulsado por el corredor tecnológico (Puerta de Hierro, Andares) y zonas religiosas/culturales tradicionales como la Basílica de Zapopan.",
+    "medium_answer": "Puerta de Hierro y la zona de Andares concentran el desarrollo inmobiliario más moderno del municipio, con torres residenciales, oficinas corporativas y uno de los centros comerciales de mayor categoría de la región. El centro histórico de Zapopan, con la Basílica de Nuestra Señora de Zapopan, mantiene un perfil más tradicional y religioso, con una de las peregrinaciones más grandes de México cada octubre. Zapopan concentra buena parte del crecimiento del sector tecnológico de la zona metropolitana de Guadalajara.",
+    "bullets": [
+        "Zapopan es el municipio más extenso y poblado de la zona metropolitana de Guadalajara.",
+        "Puerta de Hierro y Andares concentran el desarrollo corporativo y residencial más moderno del municipio.",
+        "La Basílica de Nuestra Señora de Zapopan recibe una de las peregrinaciones más grandes de México cada 12 de octubre.",
+        "El corredor tecnológico de la zona metropolitana tiene fuerte presencia en Zapopan, con empresas de software y desarrollo.",
+        "El Bosque Los Colomos, compartido con Guadalajara, es uno de los pulmones verdes más grandes de la zona metropolitana.",
+        "Zapopan tiene un centro histórico propio, distinto y más tranquilo que el de Guadalajara capital.",
+    ],
+    "sections": [
+        {"h2": "El mercado inmobiliario del polo tecnológico tapatío",
+         "body_html": "<p>Puerta de Hierro y la zona de Andares, en el poniente de Zapopan, concentran el desarrollo inmobiliario más moderno del municipio: torres residenciales de categoría, oficinas corporativas y uno de los centros comerciales de mayor nivel de la región. Es la zona que más se benefició del crecimiento del sector tecnológico de la última década en la zona metropolitana de Guadalajara.</p><p>El centro histórico de Zapopan, en contraste, mantiene un perfil mucho más tradicional, con la Basílica como eje y una vida de barrio más calma que la de las zonas de desarrollo nuevo.</p>"},
+        {"h2": "Vida de barrio: de la Basílica al corredor tecnológico",
+         "body_html": "<p>La Basílica de Nuestra Señora de Zapopan es el centro simbólico del municipio, con una plaza que se llena cada 12 de octubre para una de las peregrinaciones más multitudinarias de México. Alrededor de esa zona, el ritmo de vida es más tradicional, con mercados y comercio de cercanía.</p><p>Puerta de Hierro y Andares, en cambio, tienen un perfil mucho más corporativo y moderno, con oficinas de tecnología, restaurantes de cadena y un uso del espacio más orientado al auto que a la vida peatonal tradicional.</p><ul><li>Basílica de Zapopan: centro simbólico y religioso del municipio.</li><li>Puerta de Hierro/Andares: polo corporativo y tecnológico moderno.</li><li>Bosque Los Colomos: pulmón verde compartido con Guadalajara.</li></ul>"},
+        {"h2": "Qué conocer antes de mudarte a Zapopan",
+         "body_html": "<p>Zapopan es administrativamente independiente de Guadalajara, aunque forman parte de la misma zona metropolitana y en la práctica se viven como una sola ciudad continua. El municipio es muy extenso, por lo que la vida cotidiana varía mucho según la zona: el poniente (Puerta de Hierro, Andares) tiene un perfil, y el centro histórico y zonas más al norte tienen otro completamente distinto.</p><p>El transporte público conecta con Guadalajara, aunque para moverse dentro de Zapopan (que es muy extenso) el auto sigue siendo el medio más práctico en la mayoría de las zonas.</p>"},
+        {"h2": "Turismo y tradición que conectan con la vida zapopana",
+         "body_html": "<p>La peregrinación a la Basílica de Zapopan cada 12 de octubre es uno de los eventos religiosos y culturales más grandes de México, con cientos de miles de personas acompañando a la imagen de la Virgen desde la Catedral de Guadalajara hasta Zapopan. El Bosque Los Colomos, compartido con Guadalajara, ofrece senderos, un jardín japonés y espacios de recreación muy usados los fines de semana.</p><p>Esta combinación de tradición religiosa fuerte + polo tecnológico corporativo es parte de lo que hace a Zapopan un municipio con identidad propia dentro de la zona metropolitana, más allá de ser 'la parte norte de Guadalajara'.</p>"},
+    ],
+    "comparison_table": {
+        "caption": "Perfil de zonas de Zapopan según qué busca el comprador/inquilino",
+        "headers": ["Zona", "Perfil típico", "Fortaleza principal"],
+        "rows": [
+            ["Puerta de Hierro / Andares", "Perfil corporativo/tecnológico", "Torres nuevas, centro comercial de categoría"],
+            ["Centro histórico de Zapopan", "Perfil tradicional/religioso", "Basílica, vida de barrio calma"],
+            ["Ciudad Granja", "Perfil residencial medio", "Desarrollo consolidado, buena conexión"],
+            ["Zona norte", "Perfil residencial en expansión", "Menor costo relativo"],
+        ],
+    },
+    "faqs": [
+        {"q": "¿Zapopan es lo mismo que Guadalajara?", "a": "No, es un municipio administrativamente independiente, aunque forma parte de la misma zona metropolitana y en la práctica se vive como una sola ciudad continua."},
+        {"q": "¿Qué es Puerta de Hierro?", "a": "Una zona de desarrollo corporativo y residencial moderno en el poniente de Zapopan, con torres nuevas y el centro comercial Andares como referencia."},
+        {"q": "¿Por qué la Basílica de Zapopan es tan importante?", "a": "Porque cada 12 de octubre recibe una de las peregrinaciones más grandes de México, cuando la imagen de la Virgen de Zapopan es trasladada desde la Catedral de Guadalajara."},
+        {"q": "¿Zapopan es parte del polo tecnológico de Guadalajara?", "a": "Sí, concentra buena parte del crecimiento del sector tecnológico de la zona metropolitana, especialmente en zonas como Puerta de Hierro."},
+        {"q": "¿Qué es el Bosque Los Colomos?", "a": "Un parque urbano grande compartido entre Zapopan y Guadalajara, con senderos, un jardín japonés y espacios de recreación muy usados los fines de semana."},
+        {"q": "¿Se puede vivir en Zapopan sin auto?", "a": "Es posible en algunas zonas bien conectadas con Guadalajara, pero dada la extensión del municipio, el auto sigue siendo el medio más práctico para moverse entre zonas."},
+        {"q": "¿Andares es un buen lugar para vivir cerca?", "a": "Sí, la zona alrededor del centro comercial Andares concentra desarrollo residencial de categoría, con buena oferta de servicios y restaurantes."},
+        {"q": "¿Qué diferencia hay entre el centro de Zapopan y Puerta de Hierro?", "a": "El centro histórico tiene un perfil tradicional y religioso, ligado a la Basílica; Puerta de Hierro tiene un perfil corporativo y moderno, con torres nuevas y oficinas."},
+    ],
+    "definitions": [
+        {"term": "Zona metropolitana de Guadalajara", "definition": "Conjunto de municipios conurbados que incluye a Guadalajara, Zapopan, Tlaquepaque y Tonalá, entre otros."},
+        {"term": "Puerta de Hierro", "definition": "Zona de desarrollo corporativo y residencial moderno en el poniente de Zapopan, cercana al centro comercial Andares."},
+        {"term": "Basílica de Zapopan", "definition": "Templo religioso que alberga a la Virgen de Zapopan, centro de una de las peregrinaciones más grandes de México cada 12 de octubre."},
+        {"term": "Bosque Los Colomos", "definition": "Parque urbano compartido entre Zapopan y Guadalajara, con un jardín japonés y senderos naturales."},
+    ],
+    "social": {
+        "linkedin_es": "Zapopan combina una de las peregrinaciones religiosas más grandes de México con uno de los polos tecnológicos más fuertes del país, a pocos kilómetros de distancia entre sí. Armamos una guía real de zona (Puerta de Hierro, centro histórico) para quien evalúa mudarse o invertir en el municipio más grande de la zona metropolitana de Guadalajara. La subimos a Propomi.",
+        "twitter_es": "Zapopan: peregrinación religiosa multitudinaria + polo tecnológico fuerte, a pocos km de distancia.\n\nGuía real de zona (Puerta de Hierro, centro histórico).",
+        "twitter_en": "Zapopan, Mexico: massive religious pilgrimage + strong tech hub, just kilometers apart.\n\nReal zone guide (Puerta de Hierro, historic center).",
+    },
+}
