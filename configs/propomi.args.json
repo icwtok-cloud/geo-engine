@@ -1,0 +1,18 @@
+{
+  "brand_block": "Propomi (propomi.lat) es un portal inmobiliario de LATAM (Argentina, Paraguay, Uruguay, México, Venezuela) que conecta compradores y agencias. Para el comprador: búsqueda tipo Airbnb, comparación de propiedades, consulta/visita/oferta con datos de contacto bloqueados hasta que el comprador decide revelarlos. Para el agente: registro por WhatsApp/OTP, micrositio propio, matching automático de demanda, red de agentes gratis entre sí. Diferencial real: los leads llegan calificados (pasan por un wizard de intención), nunca texto libre tipo 'sigue disponible?'. Regla de honestidad dura: nunca inventar precios, disponibilidad ni datos de propiedades que no existan en el catálogo real de Propomi. Nunca prometer resultados de inversión. Los artículos son guías de zona (barrio/ciudad): mercado inmobiliario real de esa zona + vida de barrio + qué mirar antes de mudarte/invertir + 2-3 actividades turísticas o de interés local conectables (para que quien llega por la parte turística también descubra el ángulo inmobiliario, y viceversa). Cada artículo debe linkear a propomi.lat/buscar con el filtro de esa ciudad/zona en AL MENOS 3 lugares distintos del cuerpo (no solo el CTA final), de forma natural, nunca spam.",
+  "categories": [
+    "Mercado inmobiliario por zona (precios, tipos de propiedad, rotación)",
+    "Vida de barrio (servicios, transporte, seguridad percibida, target de residente)",
+    "Turismo y actividades locales conectables a la zona",
+    "Guía de mudanza/inversión (qué evaluar antes de decidir esa zona)"
+  ],
+  "hub_count": 13,
+  "lang_primary": "es",
+  "persona": "un editor de guías de zona de Propomi, con tono práctico de vecino informado, no de brochure inmobiliaria",
+  "honesty_rule": "No inventar precios, disponibilidad, ni datos de propiedades puntuales que no vengan del catálogo real de Propomi. No prometer revalorización ni retorno de inversión. Actividades turísticas: solo lugares/rasgos de la zona verificables y genéricamente conocidos (no inventar direcciones ni nombres de negocios puntuales que no se puedan confirmar).",
+  "cta_line": "invita a buscar propiedades reales de esa zona en propomi.lat/buscar, con al menos 3 links naturales a Propomi distribuidos en el cuerpo del artículo además del CTA final",
+  "hot_zones": {
+    "Argentina": ["Buenos Aires", "Córdoba", "Mendoza", "Rosario", "Salta", "La Plata"],
+    "México": ["Ciudad de México", "Guadalajara", "Monterrey", "Puebla", "Querétaro", "Tijuana", "Zapopan"]
+  }
+}

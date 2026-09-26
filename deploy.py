@@ -14,12 +14,14 @@ from urllib.parse import quote
 CFG = json.load(open(sys.argv[1]))
 NO_INDEXNOW = "--no-indexnow" in sys.argv
 SITE_DIR = CFG["site_dir"]
-SITE_ID = CFG["_deploy"]["netlify_site_id"]
 DOMAIN = CFG["domain"]
 HOST = DOMAIN.split("//")[1].rstrip("/")
+DEPLOY_MODE = CFG["_deploy"].get("mode", "netlify")  # "netlify" (default, legado) | "git"
 
-TOKEN = re.search(r'NETLIFY_DEPLOY_TOKEN=\s*([A-Za-z0-9_\-]+)',
-                  open(os.path.expanduser("~/.config/vraven/netlify.token")).read()).group(1)
+if DEPLOY_MODE == "netlify":
+    SITE_ID = CFG["_deploy"]["netlify_site_id"]
+    TOKEN = re.search(r'NETLIFY_DEPLOY_TOKEN=\s*([A-Za-z0-9_\-]+)',
+                      open(os.path.expanduser("~/.config/vraven/netlify.token")).read()).group(1)
 
 # excludes: dirs/ext/nombres que NUNCA se sirven (internos)
 EXCLUDE_DIRS = set(CFG["_deploy"].get("exclude_dirs", ['.claude','sales','anim','.git','__pycache__']))
@@ -43,50 +45,74 @@ def included(path, name):
     if ext in EXCLUDE_EXT: return ("/"+name) in KEEP or name in KEEP
     return True
 
-# ---- build digest ----
-os.chdir(SITE_DIR)
-files = {}
-INCLUDE = CFG["_deploy"].get("include")  # allowlist explicito (paths relativos). Si existe, modo seguro.
-SECTION_GLOB = CFG["_deploy"].get("section_glob", CFG["section_dir"])  # dir de la seccion GEO a incluir entero
-if INCLUDE:
-    # modo allowlist: SOLO estos archivos + todo el dir de la seccion GEO. Seguro para dirs "sucios".
-    explicit = list(INCLUDE)
-    secdir = pathlib.Path(SITE_DIR) / CFG["section_dir"]
-    if secdir.exists():
-        explicit += [str(p.relative_to(SITE_DIR)) for p in secdir.rglob("*") if p.is_file()]
-    secidx = f'{CFG["section_dir"]}.html'
-    if (pathlib.Path(SITE_DIR)/secidx).exists(): explicit.append(secidx)
-    missing = [r for r in explicit if not os.path.exists(r)]
-    if missing: print("WARN faltan en include:", missing[:10])
-    for rel in explicit:
-        if os.path.exists(rel):
-            files["/"+rel] = (rel, hashlib.sha1(open(rel,'rb').read()).hexdigest())
+if DEPLOY_MODE == "git":
+    # Modo git: el site_dir YA es parte de un repo (ej. apps/web/public de un
+    # proyecto Next.js en Vercel). No hay upload propio: el archivo ya está
+    # en disco (lo escribió render.py) — solo hace falta git add/commit/push
+    # en repo_dir para que el hosting (Vercel/etc.) lo despliegue solo.
+    import subprocess
+    repo_dir = CFG["_deploy"].get("repo_dir")
+    if not repo_dir:
+        print("ERROR: _deploy.mode=git requiere _deploy.repo_dir"); sys.exit(1)
+    branch = CFG["_deploy"].get("git_branch")
+    rel_site_dir = os.path.relpath(SITE_DIR, repo_dir)
+    def sh(*cmd):
+        r = subprocess.run(cmd, cwd=repo_dir, capture_output=True, text=True)
+        print(" ".join(cmd), "->", r.returncode, (r.stdout+r.stderr).strip()[:300])
+        return r.returncode
+    sh("git", "add", rel_site_dir)
+    msg = CFG["_deploy"].get("commit_message", f"content(guias): actualizar guías de zona ({CFG['brand']})")
+    rc = sh("git", "commit", "-m", msg)
+    if rc != 0:
+        print("git commit: sin cambios o ya commiteado, sigo.")
+    push_cmd = ["git", "push", "origin"]
+    if branch: push_cmd.append(f"HEAD:{branch}")
+    sh(*push_cmd)
 else:
-    for root, dirs, fs in os.walk('.'):
-        dirs[:] = [d for d in dirs if d not in EXCLUDE_DIRS]
-        for f in fs:
-            if not included(root, f): continue
-            p = os.path.join(root, f); rel = p[1:]
-            files[rel] = (p, hashlib.sha1(open(p,'rb').read()).hexdigest())
+    # ---- build digest (Netlify, modo legado) ----
+    os.chdir(SITE_DIR)
+    files = {}
+    INCLUDE = CFG["_deploy"].get("include")  # allowlist explicito (paths relativos). Si existe, modo seguro.
+    SECTION_GLOB = CFG["_deploy"].get("section_glob", CFG["section_dir"])  # dir de la seccion GEO a incluir entero
+    if INCLUDE:
+        # modo allowlist: SOLO estos archivos + todo el dir de la seccion GEO. Seguro para dirs "sucios".
+        explicit = list(INCLUDE)
+        secdir = pathlib.Path(SITE_DIR) / CFG["section_dir"]
+        if secdir.exists():
+            explicit += [str(p.relative_to(SITE_DIR)) for p in secdir.rglob("*") if p.is_file()]
+        secidx = f'{CFG["section_dir"]}.html'
+        if (pathlib.Path(SITE_DIR)/secidx).exists(): explicit.append(secidx)
+        missing = [r for r in explicit if not os.path.exists(r)]
+        if missing: print("WARN faltan en include:", missing[:10])
+        for rel in explicit:
+            if os.path.exists(rel):
+                files["/"+rel] = (rel, hashlib.sha1(open(rel,'rb').read()).hexdigest())
+    else:
+        for root, dirs, fs in os.walk('.'):
+            dirs[:] = [d for d in dirs if d not in EXCLUDE_DIRS]
+            for f in fs:
+                if not included(root, f): continue
+                p = os.path.join(root, f); rel = p[1:]
+                files[rel] = (p, hashlib.sha1(open(p,'rb').read()).hexdigest())
 
-st, site = api("GET", f"https://api.netlify.com/api/v1/sites/{SITE_ID}")
-print(f"site: {site.get('name')} | domain: {site.get('custom_domain')} | files: {len(files)}")
+    st, site = api("GET", f"https://api.netlify.com/api/v1/sites/{SITE_ID}")
+    print(f"site: {site.get('name')} | domain: {site.get('custom_domain')} | files: {len(files)}")
 
-st, dep = api("POST", f"https://api.netlify.com/api/v1/sites/{SITE_ID}/deploys",
-              json.dumps({"files": {r:s for r,(_,s) in files.items()}, "draft": False}).encode())
-if st not in (200,201): print("ERROR create:", st, dep); sys.exit(1)
-did = dep["id"]; required = set(dep.get("required", [])); up = 0; fail = []
-for rel,(p,sha) in files.items():
-    if sha in required:
-        st,_ = api("PUT", f"https://api.netlify.com/api/v1/deploys/{did}/files"+quote(rel),
-                   open(p,'rb').read(), "application/octet-stream")
-        if st in (200,201): up += 1
-        else: fail.append((rel,st))
-for _ in range(45):
-    st,d = api("GET", f"https://api.netlify.com/api/v1/deploys/{did}")
-    if d.get("state") in ("ready","error"): break
-    time.sleep(2)
-print(f"deploy {did}: subidos {up} | state {d.get('state')} | fallos {fail[:3]}")
+    st, dep = api("POST", f"https://api.netlify.com/api/v1/sites/{SITE_ID}/deploys",
+                  json.dumps({"files": {r:s for r,(_,s) in files.items()}, "draft": False}).encode())
+    if st not in (200,201): print("ERROR create:", st, dep); sys.exit(1)
+    did = dep["id"]; required = set(dep.get("required", [])); up = 0; fail = []
+    for rel,(p,sha) in files.items():
+        if sha in required:
+            st,_ = api("PUT", f"https://api.netlify.com/api/v1/deploys/{did}/files"+quote(rel),
+                       open(p,'rb').read(), "application/octet-stream")
+            if st in (200,201): up += 1
+            else: fail.append((rel,st))
+    for _ in range(45):
+        st,d = api("GET", f"https://api.netlify.com/api/v1/deploys/{did}")
+        if d.get("state") in ("ready","error"): break
+        time.sleep(2)
+    print(f"deploy {did}: subidos {up} | state {d.get('state')} | fallos {fail[:3]}")
 
 # ---- IndexNow ----
 if not NO_INDEXNOW:

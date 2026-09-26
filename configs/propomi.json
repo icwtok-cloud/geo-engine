@@ -1,0 +1,68 @@
+{
+  "domain": "https://propomi.lat",
+  "brand": "Propomi",
+  "lang": "es",
+  "date": "2026-09-26",
+  "site_dir": "/home/user/PROPOMI/apps/web/public",
+  "section_dir": "guias",
+  "section_path": "/guias",
+  "section_name": "Guías",
+  "section_title": "Guías de zona",
+  "section_kicker": "Guías locales",
+  "section_desc": "Guías de barrios y ciudades de Argentina, Paraguay, Uruguay, México y Venezuela: mercado inmobiliario, vida de barrio y qué mirar antes de mudarte o invertir.",
+  "article_kicker": "Guía de zona · Propomi",
+  "og_image": "https://propomi.lat/icon-512.png",
+  "nav": [],
+  "footer_links": [],
+  "footer_tagline": "Propomi · descubrí, decidí, negociá",
+  "theme": {
+    "bg": "#f7f8fa",
+    "text": "#15233b",
+    "accent": "#e85d2c",
+    "accent2": "#2f6fed",
+    "muted": "#6b7280",
+    "textbody": "#33415c",
+    "border": "#e3e7ee",
+    "card": "#ffffff",
+    "glow": "#fde7dc",
+    "font": "'Inter',-apple-system,\"Helvetica Neue\",Helvetica,Arial,sans-serif"
+  },
+  "cta": {
+    "href": "/buscar?utm_source=guias&utm_medium=hub&utm_campaign=nav",
+    "label": "Buscar propiedades"
+  },
+  "author": {
+    "id": "https://propomi.lat/#hernan",
+    "name": "Hernán Vega",
+    "url": "https://propomi.lat/#inicio",
+    "jobTitle": "Fundador, Propomi",
+    "sameAs": []
+  },
+  "org": {
+    "id": "https://propomi.lat/#org",
+    "name": "Propomi",
+    "url": "https://propomi.lat/",
+    "logo": "https://propomi.lat/icon-512.png",
+    "sameAs": []
+  },
+  "endcta": {
+    "title": "Buscá propiedades en {city} en Propomi",
+    "body": "Comparación real, precios claros y contacto directo con la agencia recién cuando vos decidís revelarlo.",
+    "btn_label": "Ver propiedades en Propomi →",
+    "btn_href_tmpl": "/buscar?country={country}&city={city}&utm_source=guias&utm_medium=article&utm_campaign={slug}"
+  },
+  "propomi_links": {
+    "buscar_tmpl": "/buscar?country={country}&city={city}&utm_source=guias&utm_medium=article&utm_campaign={slug}",
+    "buscar_zone_tmpl": "/buscar?country={country}&city={city}&zone={zone}&utm_source=guias&utm_medium=article&utm_campaign={slug}"
+  },
+  "_deploy": {
+    "mode": "git",
+    "repo_dir": "/home/user/PROPOMI",
+    "netlify_site_id": null,
+    "exclude_dirs": [],
+    "exclude_ext": [],
+    "exclude_names": [],
+    "indexnow_key": null,
+    "result_json": null
+  }
+}

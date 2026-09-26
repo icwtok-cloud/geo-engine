@@ -49,6 +49,45 @@ Genera `<site_dir>/<section_dir>/<slug>.html` (×N) + el índice + `sitemap_frag
 
 ---
 
+## Modo zona (geo_targets) — hubs por ciudad, sin clustering por LLM
+
+Para sitios donde la cobertura de zonas ya está definida de antemano (ej. las
+mismas hot-zones de una campaña de ads), pasar `geo_targets` en los args en vez
+de (o adicional a) `categories`:
+
+```json
+{ "geo_targets": { "Argentina": ["Buenos Aires", "Córdoba"], "México": ["Ciudad de México"] } }
+```
+
+Esto salta Query Expansion + Clustering (ahorra costo/tiempo) y arma
+determinísticamente 1 hub por ciudad, con `country`/`city`/`zone` en el hub
+(usados por `render.py` para armar los links reales a `/buscar?...`). El
+prompt de Articles agrega automáticamente la mezcla mercado inmobiliario +
+vida de barrio + turismo conectable cuando `geo_targets` está presente.
+
+## Links garantizados a la marca dentro del artículo (`propomi_links`)
+
+Si `config["propomi_links"]["buscar_tmpl"]` existe, `render.py` inyecta 2
+callouts con link real (a un tercio y a dos tercios del artículo) además del
+CTA final — 3 links mínimo garantizados por código, no solo por lo que
+escriba el contenido generado. Template soporta `{country}`, `{city}`,
+`{zone}`, `{slug}`.
+
+## Deploy sin Netlify (sitios en git, ej. Vercel)
+
+`_deploy.mode: "git"` en vez de netlify_site_id: `deploy.py` asume que
+`site_dir` ya es parte de un repo git (`_deploy.repo_dir`), y en vez de subir
+por API de Netlify hace `git add` + `git commit` + `git push` de esa carpeta
+— el hosting (Vercel, etc.) despliega solo con el push normal del repo.
+`_deploy.git_branch` opcional si hay que empujar a una rama específica.
+
+## Sección sin nav (páginas "sueltas", no visibles en la navegación del sitio)
+
+Si `nav: []` y `footer_links: []` en la config, ningún link a la sección
+aparece en el sitio — las páginas existen y son indexables (siguen en el
+sitemap/llms.txt) pero solo se llega por link directo compartido o por
+motores de búsqueda/IA, sin ensuciar la navegación visual del sitio principal.
+
 ## Decisiones de diseño (por qué así)
 
 - **Los agents devuelven JSON, no HTML.** El render usa un template fijo del sitio → consistencia total. (En el caso Shopify, dejar que cada agent generara HTML produjo CSS disparejo y artículos condensados por límite de tool-call.)

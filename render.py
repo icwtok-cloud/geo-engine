@@ -62,6 +62,7 @@ tr:last-child td{{border-bottom:none}}
 .endcta .btn{{background:{t["accent"]};color:{t["bg"]};padding:12px 24px;border-radius:9px;font-weight:800;display:inline-block}}
 .endcta .btn:hover{{background:#fff;text-decoration:none}}
 .byline{{font-size:13px;color:{t["muted"]};margin:24px 0 6px;border-top:1px solid {t["border"]};padding-top:18px}}.byline b{{color:{t["accent"]}}}
+.propomi-inline{{margin:18px 0}}.propomi-inline a{{display:inline-block;font-weight:800;background:{t["accent"]}14;border:1px solid {t["accent"]};color:{t["accent"]};padding:9px 16px;border-radius:9px;font-size:14.5px}}.propomi-inline a:hover{{background:{t["accent"]};color:{t["bg"]};text-decoration:none}}
 footer{{padding:34px 26px;border-top:1px solid {t["border"]};text-align:center;font-size:12px;color:{t["muted"]};margin-top:30px}}footer a{{color:{t["accent"]};font-weight:700}}
 @media(max-width:600px){{.controls a:not(.cta){{display:none}}.topbar{{padding:11px 14px}}.logo svg{{height:18px}}}}'''
 
@@ -110,9 +111,41 @@ def graph_ld(cfg, a, url, title):
         {"@type":"Question","name":f["q"],"acceptedAnswer":{"@type":"Answer","text":f["a"]}} for f in a["faqs"]]}
     return {"@context":"https://schema.org","@graph":[website,organ,person,webpage,article,crumb,faq]}
 
+def _propomi_link(cfg, hub, slug, extra_utm=""):
+    """Link real a propomi.lat/buscar con el filtro de la zona del hub. Genera
+    inline links garantizados por código (no depende de que el contenido del
+    articulo los incluya) — asegura el minimo de links internos a Propomi."""
+    pl = cfg.get("propomi_links") or {}
+    tmpl = pl.get("buscar_tmpl") or "/buscar?country={country}&city={city}"
+    country = hub.get("country") or ""
+    city = hub.get("city") or hub.get("h1") or ""
+    zone = hub.get("zone") or ""
+    href = tmpl.format(country=country, city=city, zone=zone, slug=slug)
+    if extra_utm: href += extra_utm
+    return href
+
+def _propomi_callout(cfg, hub, slug, label):
+    href = _propomi_link(cfg, hub, slug)
+    city = esc(hub.get("city") or hub.get("h1") or "")
+    return f'<p class="propomi-inline"><a href="{esc(href)}">{esc(label)} en {city} en Propomi →</a></p>'
+
 def render_article(cfg, a, related):
     slug=a["slug"]; url=f'{cfg["domain"]}{cfg["section_path"]}/{slug}'; title=a["title"]
-    secs="".join(f'<h2>{esc(s["h2"])}</h2>\n{s["body_html"]}\n' for s in a["sections"])
+    hub=a.get("_hub",{})
+    sec_list=a["sections"]
+    # Inyecta 2 callouts intermedios con link real a propomi.lat/buscar,
+    # repartidos entre las secciones (a un tercio y a dos tercios del
+    # articulo) — asi el minimo de 3 links a Propomi (estos 2 + el endcta)
+    # queda garantizado por el renderer, no solo por lo que escriba el
+    # contenido.
+    n=len(sec_list)
+    p1 = max(1, n//3); p2 = max(p1+1, (2*n)//3)
+    parts=[]
+    for i,s in enumerate(sec_list):
+        parts.append(f'<h2>{esc(s["h2"])}</h2>\n{s["body_html"]}\n')
+        if i==p1-1: parts.append(_propomi_callout(cfg,hub,slug,"Ver propiedades disponibles"))
+        if i==p2-1: parts.append(_propomi_callout(cfg,hub,slug,"Comparar precios reales"))
+    secs="".join(parts)
     bl="".join(f"<li>{esc(b)}</li>" for b in a["bullets"])
     t=a["comparison_table"]
     thead="".join(f"<th>{esc(h)}</th>" for h in t["headers"])
@@ -121,8 +154,10 @@ def render_article(cfg, a, related):
     faqs="".join(f'<details><summary>{esc(f["q"])}</summary><p>{esc(f["a"])}</p></details>' for f in a["faqs"])
     defs="".join(f'<div class="def"><b>{esc(d["term"])}</b><span>{esc(d["definition"])}</span></div>' for d in a["definitions"])
     rel="".join(f'<a href="{cfg["section_path"]}/{r["slug"]}">{esc(r["title"])}</a>' for r in related)
-    ec=cfg["endcta"]; btn_href=ec["btn_href_tmpl"].format(slug=slug)
-    h1=a.get("_hub",{}).get("h1", title)
+    ec=cfg["endcta"]
+    ec_title=ec["title"].format(city=hub.get("city") or hub.get("h1") or "")
+    btn_href=ec["btn_href_tmpl"].format(slug=slug, country=hub.get("country") or "", city=hub.get("city") or "")
+    h1=hub.get("h1", title)
     return f'''<!DOCTYPE html>
 <html lang="{cfg.get("lang","es")}"><head>
 <meta charset="UTF-8">
@@ -158,7 +193,7 @@ def render_article(cfg, a, related):
   <h2>Definiciones clave</h2>
   <div class="defs">{defs}</div>
   <div class="related"><h3>Recursos relacionados</h3>{rel}</div>
-  <div class="endcta"><h3>{esc(ec["title"])}</h3><p>{esc(ec["body"])}</p><a class="btn" href="{esc(btn_href)}">{esc(ec["btn_label"])}</a></div>
+  <div class="endcta"><h3>{esc(ec_title)}</h3><p>{esc(ec["body"])}</p><a class="btn" href="{esc(btn_href)}">{esc(ec["btn_label"])}</a></div>
   <p class="byline">Por <b>{esc(cfg["author"]["name"])}</b> · {esc(cfg.get("author",{}).get("jobTitle",""))} · {cfg.get("date","2026-05-31")}</p>
 </div>
 {footer_html(cfg)}
