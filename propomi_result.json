@@ -1025,6 +1025,144 @@
         "city": "La Plata",
         "zone": ""
       }
+    },
+    {
+      "meta_description": "Guía de zona de Ciudad de México: mercado inmobiliario por alcaldía, vida de barrio y qué conocer antes de mudarte o invertir en la capital mexicana.",
+      "short_answer": "Ciudad de México se organiza en 16 alcaldías con mercados inmobiliarios muy distintos entre sí: Cuauhtémoc y Benito Juárez concentran la mayor demanda de departamentos por su ubicación central, mientras que Miguel Hidalgo y Álvaro Obregón ofrecen un perfil más residencial y verde.",
+      "medium_answer": "La Roma y la Condesa, dentro de la alcaldía Cuauhtémoc, son de las zonas de mayor demanda por su oferta gastronómica, arquitectura de principios del siglo XX y perfil peatonal. Polanco, en Miguel Hidalgo, mantiene el perfil más exclusivo de la ciudad, con torres de categoría y cercanía a Bosque de Chapultepec. Benito Juárez (Del Valle, Nápoles) atrae a un perfil más familiar de clase media-alta, con buena conexión de Metro y Metrobús. La ciudad tiene un riesgo sísmico real (recordado por los sismos de 1985 y 2017), algo que influye directamente en la valoración de edificios según su año y tipo de construcción.",
+      "bullets": [
+        "CDMX se divide en 16 alcaldías, cada una con su propio mercado inmobiliario y perfil de residente.",
+        "La Roma y la Condesa (Cuauhtémoc) son las zonas de mayor oferta gastronómica y vida peatonal de la ciudad.",
+        "Polanco (Miguel Hidalgo) es la zona de mayor categoría, junto a Bosque de Chapultepec.",
+        "El riesgo sísmico es real y afecta la valoración de propiedades según antigüedad y tipo de construcción del edificio.",
+        "El Metro y el Metrobús cubren gran parte de la ciudad, aunque el tráfico vehicular es un factor a considerar en casi cualquier zona.",
+        "Coyoacán conserva un perfil colonial y bohemio, con mercados y calles empedradas."
+      ],
+      "sections": [
+        {
+          "h2": "El mercado inmobiliario por alcaldía",
+          "body_html": "<p>Cada alcaldía de Ciudad de México funciona casi como una ciudad distinta en términos inmobiliarios. Cuauhtémoc (Roma, Condesa, Juárez) concentra la demanda de perfil joven y profesional, con edificios de principios del siglo XX muy valorados por su arquitectura, aunque con mayor exigencia de revisión estructural por el riesgo sísmico. Benito Juárez (Del Valle, Nápoles, Narvarte) atrae a un perfil más familiar, con buena conexión de transporte y menor densidad que el centro.</p><p>Miguel Hidalgo, con Polanco como referencia, mantiene el segmento de mayor categoría de la ciudad, mientras que Álvaro Obregón (San Ángel, Santa Fe) combina zonas coloniales con desarrollos corporativos modernos.</p>"
+        },
+        {
+          "h2": "Vida de barrio: de la Roma-Condesa a Polanco",
+          "body_html": "<p>La Roma y la Condesa tienen un perfil marcadamente peatonal, con camellones arbolados, cafés y una oferta gastronómica que atrae tanto a residentes como a visitantes. Es la zona con mayor concentración de vida de calle de la ciudad. Polanco, en cambio, ofrece un perfil más formal, con avenidas amplias, boutiques de lujo y cercanía directa a Bosque de Chapultepec, uno de los parques urbanos más grandes de Latinoamérica.</p><p>Coyoacán, más al sur, conserva un perfil colonial con calles empedradas y mercados tradicionales, ofreciendo un ritmo de vida distinto al de las zonas más centrales.</p><ul><li>Roma-Condesa: vida peatonal y gastronómica.</li><li>Polanco: perfil formal, cercano a Chapultepec.</li><li>Coyoacán: perfil colonial y bohemio.</li></ul>"
+        },
+        {
+          "h2": "Qué conocer antes de mudarte a CDMX",
+          "body_html": "<p>El riesgo sísmico es un factor real a considerar: los sismos de 1985 y 2017 dejaron aprendizajes concretos sobre qué tipo de construcción y qué zonas (sobre todo las de suelo más blando, como partes del centro histórico) requieren mayor atención estructural. Revisar el año y tipo de construcción de un edificio es una práctica habitual antes de comprar o alquilar.</p><p>El tráfico vehicular es intenso en gran parte de la ciudad, por lo que la cercanía al Metro, Metrobús o Ecobici (sistema de bicicletas públicas) es una variable importante al elegir zona, más allá del precio del metro cuadrado.</p>"
+        },
+        {
+          "h2": "Turismo y puntos de interés que conectan con la vida capitalina",
+          "body_html": "<p>El Bosque de Chapultepec, uno de los parques urbanos más grandes de Latinoamérica, incluye el Castillo de Chapultepec y varios museos (Antropología, Arte Moderno) — es tanto destino turístico como espacio de uso cotidiano para quienes viven cerca. El Centro Histórico, con el Zócalo y el Palacio de Bellas Artes, concentra el patrimonio colonial y prehispánico de la ciudad (sobre las ruinas del Templo Mayor).</p><p>Coyoacán, con su mercado y la Casa Azul (museo de Frida Kahlo), ofrece un circuito cultural distinto, más ligado a la identidad artística e intelectual mexicana del siglo XX.</p>"
+        }
+      ],
+      "comparison_table": {
+        "caption": "Perfil de alcaldías/colonias de CDMX según qué busca el comprador/inquilino",
+        "headers": [
+          "Zona",
+          "Perfil típico",
+          "Fortaleza principal"
+        ],
+        "rows": [
+          [
+            "Roma / Condesa (Cuauhtémoc)",
+            "Jóvenes profesionales",
+            "Vida peatonal, gastronomía"
+          ],
+          [
+            "Polanco (Miguel Hidalgo)",
+            "Perfil de categoría alta",
+            "Boutiques, cercanía a Chapultepec"
+          ],
+          [
+            "Del Valle / Nápoles (Benito Juárez)",
+            "Familias de clase media-alta",
+            "Buena conexión de transporte"
+          ],
+          [
+            "Coyoacán",
+            "Perfil bohemio/cultural",
+            "Identidad colonial, mercados"
+          ],
+          [
+            "Santa Fe (Álvaro Obregón)",
+            "Perfil corporativo",
+            "Torres de oficinas y desarrollos nuevos"
+          ]
+        ]
+      },
+      "faqs": [
+        {
+          "q": "¿Cuántas alcaldías tiene Ciudad de México?",
+          "a": "16 alcaldías, cada una con su propio mercado inmobiliario, densidad y perfil de residente, desde el centro histórico hasta zonas más residenciales del sur y poniente."
+        },
+        {
+          "q": "¿Es seguro comprar un departamento en zona sísmica en CDMX?",
+          "a": "Depende del edificio: la revisión del año de construcción y del tipo de suelo (algunas zonas del centro tienen suelo más blando) es una práctica estándar antes de decidir, tras los aprendizajes de los sismos de 1985 y 2017."
+        },
+        {
+          "q": "¿Qué diferencia hay entre la Roma y la Condesa?",
+          "a": "Ambas están dentro de la alcaldía Cuauhtémoc y comparten perfil peatonal/gastronómico; la Condesa tiene más presencia de parques (España, México) mientras la Roma concentra más galerías y cafés de especialidad."
+        },
+        {
+          "q": "¿Polanco es la zona más cara de CDMX?",
+          "a": "Es una de las de mayor valor por metro cuadrado, junto con partes de Santa Fe y Bosques de las Lomas, por su perfil de categoría y cercanía a Chapultepec."
+        },
+        {
+          "q": "¿Cómo es moverse por CDMX sin auto?",
+          "a": "El Metro y el Metrobús cubren buena parte de la ciudad, y Ecobici (bicicletas públicas) es una opción real en zonas como Roma, Condesa y el centro — aunque el tráfico vehicular sigue siendo intenso en general."
+        },
+        {
+          "q": "¿Qué es Ecobici?",
+          "a": "El sistema de bicicletas públicas compartidas de Ciudad de México, con estaciones distribuidas en varias alcaldías centrales."
+        },
+        {
+          "q": "¿Coyoacán es buena zona para vivir?",
+          "a": "Ofrece un perfil de vida más tranquilo y colonial que el centro, con mercados tradicionales e identidad cultural fuerte, aunque algo más alejado de las zonas corporativas."
+        },
+        {
+          "q": "¿Qué museos hay en el Bosque de Chapultepec?",
+          "a": "El Museo Nacional de Antropología y el Museo de Arte Moderno son los más visitados, además del Castillo de Chapultepec, con vista panorámica de la ciudad."
+        }
+      ],
+      "definitions": [
+        {
+          "term": "Alcaldía",
+          "definition": "División administrativa de Ciudad de México (16 en total), equivalente a un municipio dentro de la capital."
+        },
+        {
+          "term": "Metrobús",
+          "definition": "Sistema de autobuses de tránsito rápido con carriles exclusivos que complementa al Metro en CDMX."
+        },
+        {
+          "term": "Ecobici",
+          "definition": "Sistema de bicicletas públicas compartidas de Ciudad de México, con estaciones en varias alcaldías centrales."
+        },
+        {
+          "term": "Templo Mayor",
+          "definition": "Sitio arqueológico mexica ubicado bajo el Centro Histórico de CDMX, descubierto durante excavaciones urbanas."
+        }
+      ],
+      "social": {
+        "linkedin_es": "Ciudad de México no tiene un mercado inmobiliario, tiene 16 (una alcaldía distinta cada una). Roma-Condesa se mueve distinto a Polanco, y Polanco se mueve distinto a Coyoacán. Armamos una guía real de zona pensando en quien evalúa mudarse o invertir en la capital, incluyendo el factor sísmico que muchas guías turísticas ignoran. La subimos a Propomi.",
+        "twitter_es": "CDMX tiene 16 alcaldías y ningún mercado inmobiliario único.\n\nRoma-Condesa ≠ Polanco ≠ Coyoacán.\n\nGuía real de zona, con el factor sísmico incluido (no como las guías turísticas).",
+        "twitter_en": "Mexico City has 16 boroughs and no single real estate market.\n\nRoma-Condesa ≠ Polanco ≠ Coyoacán.\n\nReal zone guide, seismic risk included (unlike most tourist guides)."
+      },
+      "slug": "ciudad-de-mexico-mexico",
+      "title": "Vivir en Ciudad de México: guía de zona y mercado inmobiliario",
+      "_hub": {
+        "slug": "ciudad-de-mexico-mexico",
+        "title": "Vivir en Ciudad de México: guía de zona y mercado inmobiliario",
+        "h1": "Guía de zona: Ciudad de México",
+        "primary_query_es": "como es vivir en Ciudad de México",
+        "primary_query_en": "what is it like living in Ciudad de México",
+        "intent": "long-tail",
+        "content_angle": "guía de zona de Ciudad de México: mercado inmobiliario, vida de barrio y turismo conectable",
+        "priority": "P1",
+        "country": "México",
+        "city": "Ciudad de México",
+        "zone": ""
+      }
     }
   ],
   "query_count": 0,
