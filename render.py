@@ -64,6 +64,14 @@ tr:last-child td{{border-bottom:none}}
 .endcta .btn:hover{{background:#fff;color:{t["text"]};text-decoration:none}}
 .byline{{font-size:13px;color:{t["muted"]};margin:24px 0 6px;border-top:1px solid {t["border"]};padding-top:18px}}.byline b{{color:{t["accent"]}}}
 .propomi-inline{{margin:18px 0}}.propomi-inline a{{display:inline-block;font-weight:800;background:{t["accent"]}14;border:1px solid {t["accent"]};color:{t["accent"]};padding:9px 16px;border-radius:9px;font-size:14.5px}}.propomi-inline a:hover{{background:{t["accent"]};color:{t["bg"]};text-decoration:none}}
+.attractions-grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin:14px 0 26px}}
+.attraction-card{{background:{t["card"]};border:1px solid {t["border"]};border-radius:12px;overflow:hidden;display:flex;flex-direction:column}}
+.attraction-card img{{width:100%;height:140px;object-fit:cover;display:block;background:{t["border"]}}}
+.attraction-body{{padding:14px 16px}}
+.attraction-body h4{{font-size:15px;font-weight:800;color:{t["text"]};margin:0 0 6px}}
+.attraction-body p{{font-size:13px;color:{t["textbody"]};margin:0 0 10px}}
+.attraction-links{{display:flex;flex-wrap:wrap;gap:10px}}
+.attraction-links a{{font-size:12.5px;font-weight:700;color:{t["accent"]}}}
 footer{{padding:34px 26px;border-top:1px solid {t["border"]};text-align:center;font-size:12px;color:{t["muted"]};margin-top:30px}}footer a{{color:{t["accent"]};font-weight:700}}
 @media(max-width:600px){{.controls a:not(.cta){{display:none}}.topbar{{padding:11px 14px}}.logo svg{{height:18px}}}}'''
 
@@ -127,7 +135,7 @@ def _propomi_link(cfg, hub, slug, extra_utm=""):
 
 # Tipos validos del buscador (ver PROPERTY_TYPES en apps/web/app/page.tsx del
 # repo Propomi) usados para la grilla de directorio interno.
-PROPOMI_PROPERTY_TYPES = ["Departamento", "Casa", "Terreno", "Local"]
+PROPOMI_PROPERTY_TYPES = ["Departamento", "Casa", "Terreno"]
 
 def _propomi_link_typed(cfg, hub, slug, property_type):
     href = _propomi_link(cfg, hub, slug)
@@ -139,7 +147,43 @@ def _propomi_callout(cfg, hub, slug, label):
     city = esc(hub.get("city") or hub.get("h1") or "")
     return f'<p class="propomi-inline"><a href="{esc(href)}">{esc(label)} en {city} en Propomi →</a></p>'
 
-def render_article(cfg, a, related, all_hubs=None):
+def _maps_search(query):
+    return "https://www.google.com/maps/search/?api=1&query=" + quote(query)
+
+def _attraction_card(item, city=""):
+    img = esc(item["image"]); name = esc(item["name"])
+    extract = esc((item.get("extract") or "")[:220])
+    maps_q = f'{item.get("name","")} {city}'.strip()
+    maps = esc(_maps_search(maps_q))
+    wiki = esc(item.get("wiki_url") or "")
+    return f'''<div class="attraction-card">
+      <img src="{img}" alt="{name}" loading="lazy">
+      <div class="attraction-body">
+        <h4>{name}</h4>
+        <p>{extract}{"…" if extract else ""}</p>
+        <div class="attraction-links">
+          <a href="{maps}" target="_blank" rel="noopener">Ver en Google Maps →</a>
+          {f'<a href="{wiki}" target="_blank" rel="noopener">Más info →</a>' if wiki else ''}
+        </div>
+      </div>
+    </div>'''
+
+def _categorias_locales(hub, zone_names):
+    """Links de descubrimiento local (bares, restaurantes, cafes, ropa) via
+    busqueda real de Google Maps -- nunca un negocio puntual inventado, solo
+    la categoria + la zona real. Cubre el patron de busqueda 'restaurantes en
+    Palermo', 'bares en Roma Norte', etc. sin fabricar direcciones/telefonos."""
+    city = hub.get("city") or hub.get("h1") or ""
+    if not city: return ""
+    cats = ["Restaurantes", "Bares y vida nocturna", "Cafeterías", "Tiendas de ropa"]
+    targets = [city]
+    items = "".join(
+        f'<a href="{esc(_maps_search(f"{cat} en {t}"))}" target="_blank" rel="noopener">{esc(cat)} en {esc(t)}</a>'
+        for t in targets for cat in cats
+    )
+    return f'<div class="related directorio"><h3>Explorá {esc(city)} en el mapa</h3>{items}</div>'
+
+def render_article(cfg, a, related, all_hubs=None, attractions=None):
     slug=a["slug"]; url=f'{cfg["domain"]}{cfg["section_path"]}/{slug}'; title=a["title"]
     hub=a.get("_hub",{})
     sec_list=a["sections"]
@@ -185,13 +229,13 @@ def render_article(cfg, a, related, all_hubs=None):
     # busqueda), pensado para acercar el conteo de links por pagina a un
     # numero alto pero seguro (~90, lejos del limite practico de ~100 que
     # recomienda Google) sin inventar contenido ni romper la estructura.
+    zone_names = [row[0] for row in (a.get("comparison_table", {}).get("rows") or []) if row]
     directorio = ""
     if all_hubs and cfg.get("propomi_links"):
         grid_items = "".join(
             f'<a href="{esc(_propomi_link_typed(cfg, h, slug, t))}">{esc(t)} en {esc(h.get("city") or "")}</a>'
             for h in all_hubs for t in PROPOMI_PROPERTY_TYPES
         )
-        zone_names = [row[0] for row in (a.get("comparison_table", {}).get("rows") or []) if row]
         zone_items = "".join(
             f'<a href="{esc(_propomi_link(cfg, {**hub, "zone": zn}, slug))}">{esc(zn)}</a>'
             for zn in zone_names
@@ -208,6 +252,18 @@ def render_article(cfg, a, related, all_hubs=None):
             '<div class="related directorio">'
             f'<h3>Buscar por país</h3>{country_items}</div>'
         )
+    # "Que hacer en {city}": atracciones reales verificadas via Wikipedia
+    # (nombre, extracto, imagen) armadas por fetch_attractions.py -- nunca
+    # inventadas. Cada tarjeta linkea a una busqueda real de Google Maps (no
+    # un place_id fijo, asi nunca queda una direccion vieja/incorrecta) y a
+    # la fuente (Wikipedia) para quien quiera mas detalle.
+    city_name = hub.get("city") or hub.get("h1") or ""
+    atracciones_html = ""
+    if attractions:
+        cards = "".join(_attraction_card(item, city_name) for item in attractions)
+        if cards:
+            atracciones_html = f'<h2>Qué hacer en {esc(city_name)}</h2><div class="attractions-grid">{cards}</div>'
+    categorias_html = _categorias_locales(hub, zone_names)
     ec=cfg["endcta"]
     ec_title=ec["title"].format(city=hub.get("city") or hub.get("h1") or "")
     btn_href=ec["btn_href_tmpl"].format(slug=quote(slug), country=quote(hub.get("country") or ""), city=quote(hub.get("city") or ""))
@@ -247,7 +303,9 @@ def render_article(cfg, a, related, all_hubs=None):
   <h2>Definiciones clave</h2>
   <div class="defs">{defs}</div>
   <div class="related"><h3>Recursos relacionados</h3>{rel}</div>
+  {atracciones_html}
   {otras_zonas}
+  {categorias_html}
   {directorio}
   <div class="endcta"><h3>{esc(ec_title)}</h3><p>{esc(ec["body"])}</p><a class="btn" href="{esc(btn_href)}">{esc(ec["btn_label"])}</a></div>
   <p class="byline">Por <b>{esc(cfg["author"]["name"])}</b> · {esc(cfg.get("author",{}).get("jobTitle",""))} · {cfg.get("date","2026-05-31")}</p>
@@ -297,13 +355,15 @@ def main():
     articles=data["articles"]
     site=pathlib.Path(cfg["site_dir"]); out=site/cfg["section_dir"]; out.mkdir(parents=True,exist_ok=True)
     all_hubs=[a.get("_hub",{}) for a in articles]
+    attractions_path = pathlib.Path(__file__).parent / "attractions.json"
+    attractions = json.loads(attractions_path.read_text(encoding="utf-8")) if attractions_path.exists() else {}
     for a in articles:
         # "Recursos relacionados": el resto de las guias (acotado a lo que
         # realmente hay -- con pocos hubs no hace falta limitar a 3, y mas
         # cross-linking entre paginas del mismo sitio es exactamente lo que
         # ayuda a que los motores de IA descubran y conecten todo el set).
         related=[x for x in articles if x is not a]
-        (out/f'{a["slug"]}.html').write_text(render_article(cfg,a,related,all_hubs),encoding="utf-8")
+        (out/f'{a["slug"]}.html').write_text(render_article(cfg,a,related,all_hubs,attractions.get(a["slug"])),encoding="utf-8")
     (site/f'{cfg["section_dir"]}.html').write_text(render_index(cfg,articles),encoding="utf-8")
     runner=pathlib.Path(__file__).parent
     base=cfg["domain"]+cfg["section_path"]; today=cfg.get("date","2026-05-31")
