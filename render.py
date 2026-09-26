@@ -13,6 +13,7 @@ Genera en <site_dir>:
 Y en el dir del runner: sitemap_fragment.xml + llms_block.txt
 """
 import json, sys, html, pathlib
+from urllib.parse import quote
 
 def esc(s): return html.escape(str(s), quote=True)
 
@@ -117,10 +118,10 @@ def _propomi_link(cfg, hub, slug, extra_utm=""):
     articulo los incluya) — asegura el minimo de links internos a Propomi."""
     pl = cfg.get("propomi_links") or {}
     tmpl = pl.get("buscar_tmpl") or "/buscar?country={country}&city={city}"
-    country = hub.get("country") or ""
-    city = hub.get("city") or hub.get("h1") or ""
-    zone = hub.get("zone") or ""
-    href = tmpl.format(country=country, city=city, zone=zone, slug=slug)
+    country = quote(hub.get("country") or "")
+    city = quote(hub.get("city") or hub.get("h1") or "")
+    zone = quote(hub.get("zone") or "")
+    href = tmpl.format(country=country, city=city, zone=zone, slug=quote(slug))
     if extra_utm: href += extra_utm
     return href
 
@@ -156,7 +157,7 @@ def render_article(cfg, a, related):
     rel="".join(f'<a href="{cfg["section_path"]}/{r["slug"]}">{esc(r["title"])}</a>' for r in related)
     ec=cfg["endcta"]
     ec_title=ec["title"].format(city=hub.get("city") or hub.get("h1") or "")
-    btn_href=ec["btn_href_tmpl"].format(slug=slug, country=hub.get("country") or "", city=hub.get("city") or "")
+    btn_href=ec["btn_href_tmpl"].format(slug=quote(slug), country=quote(hub.get("country") or ""), city=quote(hub.get("city") or ""))
     h1=hub.get("h1", title)
     return f'''<!DOCTYPE html>
 <html lang="{cfg.get("lang","es")}"><head>
