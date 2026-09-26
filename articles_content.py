@@ -236,3 +236,113 @@ ARTICLES["rosario-argentina"] = {
         "twitter_en": "Rosario, Argentina: miles of riverside coast with beaches + strong local culture (Messi, Che Guevara).\n\nReal zone guide, from Puerto Norte to Fisherton.",
     },
 }
+
+ARTICLES["salta-argentina"] = {
+    "meta_description": "Guía de zona de Salta capital: mercado inmobiliario colonial, vida de barrio y la conexión directa con los Valles Calchaquíes y el norte argentino.",
+    "short_answer": "Salta capital combina un centro histórico colonial muy bien conservado con barrios residenciales en expansión hacia el sur y el oeste de la ciudad, y funciona como puerta de entrada a los Valles Calchaquíes y la Quebrada.",
+    "medium_answer": "El centro de Salta, con su arquitectura colonial y la Catedral como ícono, concentra el comercio y la vida cultural de la ciudad. Barrios como Tres Cerritos y Grand Bourg, hacia el sur, son los de mayor demanda residencial de perfil medio-alto, con casas y edificios de baja altura. La ciudad creció mucho en la última década hacia zonas antes periféricas, impulsada en parte por el turismo hacia los Valles Calchaquíes (Cafayate) y la Quebrada de Humahuaca, que usan Salta como punto de partida.",
+    "bullets": [
+        "El centro histórico de Salta conserva arquitectura colonial, con la Catedral Basílica y el Cabildo como referencias.",
+        "Tres Cerritos y Grand Bourg son los barrios residenciales de mayor demanda del sur de la ciudad.",
+        "El Cerro San Bernardo, con teleférico desde el centro, funciona como mirador natural de toda la ciudad.",
+        "Salta es la puerta de entrada habitual hacia los Valles Calchaquíes (Cafayate) y la Quebrada de Humahuaca.",
+        "El tren a las Nubes, uno de los atractivos ferroviarios más altos del mundo, parte desde cerca de la ciudad.",
+        "La Feria Artesanal y el Museo de Arqueología de Alta Montaña (MAAM) son referencias culturales del centro.",
+    ],
+    "sections": [
+        {"h2": "El mercado inmobiliario de una ciudad colonial en expansión",
+         "body_html": "<p>El centro de Salta mantiene el perfil colonial más conservado de las capitales del norte argentino, con edificios bajos y calles angostas alrededor de la plaza principal. La demanda de vivienda nueva se concentra hacia el sur (Tres Cerritos, Grand Bourg) y el oeste de la ciudad, zonas que crecieron fuerte en la última década con desarrollos de perfil medio-alto.</p><p>El crecimiento del turismo hacia los Valles Calchaquíes y la Quebrada de Humahuaca — que usan Salta capital como base de operaciones — también empujó demanda de alquiler temporario en el centro histórico, un mercado paralelo al residencial tradicional.</p>"},
+        {"h2": "Vida de barrio: entre lo colonial y el crecimiento reciente",
+         "body_html": "<p>El centro salteño se vive alrededor de la plaza 9 de Julio, con la Catedral Basílica y el Cabildo como puntos de encuentro cotidianos, no solo turísticos. Tres Cerritos, al sur, ofrece un perfil más moderno y residencial, con centros comerciales y colegios privados que atrajeron a familias de clase media-alta en los últimos años.</p><p>El Cerro San Bernardo, accesible en teleférico desde el centro, es un punto de referencia diario para hacer ejercicio o simplemente mirar la ciudad desde arriba — muy usado por salteños, no solo por turistas.</p><ul><li>Centro histórico colonial, muy caminable.</li><li>Tres Cerritos y Grand Bourg como zonas de expansión residencial.</li><li>Cerro San Bernardo como mirador y espacio recreativo cotidiano.</li></ul>"},
+        {"h2": "Qué conocer antes de mudarte a Salta",
+         "body_html": "<p>Salta tiene un clima templado con inviernos secos y veranos con lluvias concentradas (época de verano en el norte argentino). La altura de la ciudad (alrededor de 1.200 metros sobre el nivel del mar) es moderada comparada con otras ciudades del NOA, por lo que no suele generar mal de altura como sí puede pasar más al norte, cerca de la Puna.</p><p>El transporte público cubre bien el centro y los barrios cercanos, aunque para Tres Cerritos y otras zonas de expansión reciente el auto facilita bastante la rutina diaria.</p>"},
+        {"h2": "Turismo que conecta con la vida salteña",
+         "body_html": "<p>Salta funciona como base para recorrer los Valles Calchaquíes (con Cafayate como destino de bodegas de altura) y la Quebrada de Humahuaca, ambos a pocas horas en auto. El tren a las Nubes, uno de los recorridos ferroviarios de mayor altura del mundo, parte desde cerca de la ciudad y es parte del orgullo local, más allá del circuito turístico.</p><p>El Museo de Arqueología de Alta Montaña (MAAM), que exhibe hallazgos de la cultura incaica de altura, y la Feria Artesanal son puntos de referencia cultural que los propios salteños visitan y recomiendan, no solo escaparates para visitantes.</p>"},
+    ],
+    "comparison_table": {
+        "caption": "Perfil de zonas de Salta capital según qué busca el comprador/inquilino",
+        "headers": ["Zona", "Perfil típico", "Fortaleza principal"],
+        "rows": [
+            ["Centro histórico", "Perfil urbano/turístico, alquiler temporario", "Arquitectura colonial, vida cultural"],
+            ["Tres Cerritos", "Familias de perfil medio-alto", "Centros comerciales, colegios privados"],
+            ["Grand Bourg", "Familias, perfil residencial en expansión", "Desarrollos nuevos, buena conexión"],
+            ["Zona norte", "Perfil popular", "Menor costo relativo"],
+        ],
+    },
+    "faqs": [
+        {"q": "¿Qué altura tiene Salta capital?", "a": "Está a unos 1.200 metros sobre el nivel del mar, una altura moderada que no suele generar mal de altura, a diferencia de zonas más elevadas de la Puna."},
+        {"q": "¿Cuál es el barrio más buscado por familias en Salta?", "a": "Tres Cerritos concentra la mayor demanda residencial de perfil medio-alto, con centros comerciales y colegios privados cercanos."},
+        {"q": "¿Salta es un buen punto de partida para conocer el norte argentino?", "a": "Sí, es la base habitual para recorrer los Valles Calchaquíes (Cafayate), la Quebrada de Humahuaca y el circuito del Tren a las Nubes."},
+        {"q": "¿Cómo es el centro histórico de Salta?", "a": "Conserva arquitectura colonial bien preservada alrededor de la plaza 9 de Julio, con la Catedral Basílica y el Cabildo como principales referencias."},
+        {"q": "¿Se puede subir al Cerro San Bernardo sin auto?", "a": "Sí, hay un teleférico que sube desde el centro de la ciudad, además de un sendero para quienes prefieren subir caminando."},
+        {"q": "¿Cómo es el clima en Salta capital?", "a": "Templado, con inviernos secos y veranos con lluvias concentradas, típico del noroeste argentino."},
+        {"q": "¿Qué es el MAAM en Salta?", "a": "El Museo de Arqueología de Alta Montaña, que exhibe hallazgos de la cultura incaica de altura encontrados en la región, incluidos los famosos 'Niños de Llullaillaco'."},
+        {"q": "¿Grand Bourg es una buena zona para invertir?", "a": "Es una de las zonas de expansión residencial más activas de la última década, con desarrollos nuevos orientados a familias de perfil medio."},
+    ],
+    "definitions": [
+        {"term": "NOA", "definition": "Noroeste argentino, región que incluye a Salta, Jujuy, Tucumán, Catamarca y Santiago del Estero."},
+        {"term": "Valles Calchaquíes", "definition": "Región vitivinícola y de paisajes de altura al sur de Salta, con Cafayate como localidad más conocida."},
+        {"term": "Quebrada de Humahuaca", "definition": "Formación geológica y cultural declarada Patrimonio de la Humanidad, ubicada en la provincia de Jujuy, cerca de Salta."},
+        {"term": "Puna", "definition": "Meseta de altura característica del extremo noroeste argentino, con altitudes que superan los 3.000 metros."},
+    ],
+    "social": {
+        "linkedin_es": "Salta capital tiene el centro colonial mejor conservado del norte argentino, y funciona como puerta de entrada a los Valles Calchaquíes y la Quebrada de Humahuaca. Armamos una guía real de zona (centro histórico, Tres Cerritos, Grand Bourg) para quien evalúa mudarse o invertir ahí. La subimos a Propomi, con foco en lo que cambia entre barrios, más allá del circuito turístico.",
+        "twitter_es": "Salta: centro colonial + puerta de entrada a los Valles Calchaquíes y la Quebrada.\n\nGuía real de zona (centro, Tres Cerritos, Grand Bourg) para quien piensa mudarse.",
+        "twitter_en": "Salta, Argentina: colonial downtown + gateway to the Calchaquí Valleys and Humahuaca Gorge.\n\nReal zone guide for anyone considering moving there.",
+    },
+}
+
+ARTICLES["la-plata-argentina"] = {
+    "meta_description": "Guía de zona de La Plata: mercado inmobiliario universitario, la trama urbana en diagonales y qué conocer antes de mudarte a la capital de la provincia de Buenos Aires.",
+    "short_answer": "La Plata es una ciudad planificada desde su fundación en 1882, con una trama urbana única de calles numeradas y diagonales, un mercado inmobiliario fuertemente influido por la Universidad Nacional de La Plata, y buena conexión con la Ciudad de Buenos Aires.",
+    "medium_answer": "El casco urbano de La Plata, con sus calles numeradas y diagonales, concentra la mayor demanda de alquiler estudiantil por la cercanía a las facultades de la UNLP. City Bell y Gonnet, hacia el norte, son las localidades preferidas por familias que buscan casas con jardín y un ritmo más suburbano sin alejarse demasiado de la capital provincial. La cercanía a la Ciudad Autónoma de Buenos Aires (unos 60 km) hace que muchos platenses combinen ambas ciudades en su rutina semanal.",
+    "bullets": [
+        "La Plata es una ciudad planificada, con una trama de calles numeradas (no con nombres) y diagonales que la hacen fácil de orientarse una vez aprendida la lógica.",
+        "La Universidad Nacional de La Plata (UNLP) es una de las más grandes de Argentina, y define buena parte del mercado de alquiler del casco urbano.",
+        "City Bell y Gonnet son las localidades preferidas por familias que buscan casas con más espacio verde.",
+        "El Bosque de La Plata, con el Jardín Zoológico y el estadio, es el pulmón verde más grande de la ciudad.",
+        "La Catedral de La Plata es una de las más grandes de Latinoamérica y un ícono arquitectónico de la ciudad.",
+        "La Plata está a unos 60 km de la Ciudad de Buenos Aires, con buena conexión por autopista y tren.",
+    ],
+    "sections": [
+        {"h2": "El mercado inmobiliario de una ciudad universitaria planificada",
+         "body_html": "<p>El casco urbano de La Plata, delimitado por las avenidas 1, 32, 72 y 122, concentra la mayor oferta de alquiler orientada a estudiantes de la UNLP, con un ciclo de demanda muy marcado por el calendario académico, similar al de otras ciudades universitarias del país. Los departamentos de 1 y 2 ambientes cerca de las facultades de Ciencias Exactas, Derecho o Medicina son los de mayor rotación.</p><p>City Bell y Gonnet, localidades del partido de La Plata hacia el norte, ofrecen un mercado distinto: casas con jardín, calles arboladas y un ritmo más suburbano, atractivo para familias que trabajan en La Plata o incluso viajan a Buenos Aires.</p>"},
+        {"h2": "Vida de barrio: la lógica de las diagonales",
+         "body_html": "<p>La Plata fue diseñada desde cero en 1882 con una trama de cuadras perfectamente numeradas y diagonales que cruzan la ciudad, un caso único en Argentina. Una vez que se entiende la lógica (las calles con número par van en un sentido, las impares en otro, y las diagonales conectan puntos clave), moverse por la ciudad es muy predecible.</p><p>El Bosque de La Plata, con el Jardín Zoológico, el Museo de Ciencias Naturales y el estadio de fútbol, funciona como el espacio verde y recreativo más importante de la ciudad, muy usado los fines de semana.</p><ul><li>Trama urbana planificada con calles numeradas y diagonales.</li><li>El Bosque como pulmón verde y polo cultural/recreativo.</li><li>Fuerte presencia estudiantil en el casco urbano por la UNLP.</li></ul>"},
+        {"h2": "Qué conocer antes de mudarte a La Plata",
+         "body_html": "<p>La cercanía a la Ciudad de Buenos Aires (unos 60 km, alrededor de una hora por autopista o tren) hace que buena parte de la población platense combine ambas ciudades en su rutina: trabajar o estudiar en una y vivir en la otra es habitual. Esto sostiene demanda de vivienda tanto de quien busca instalarse definitivamente en La Plata como de quien la usa como alternativa más accesible cerca de la Capital Federal.</p><p>El transporte público y las bicicletas cubren bien el casco urbano, que es plano y con calles anchas — un factor que muchos platenses valoran frente a otras ciudades más caóticas para moverse.</p>"},
+        {"h2": "Turismo y puntos de interés de la ciudad de las diagonales",
+         "body_html": "<p>La Catedral de La Plata, una de las más grandes de Latinoamérica, es un ícono visible desde varios puntos de la ciudad y forma parte del recorrido cotidiano del centro. El Museo de Ciencias Naturales, dentro del Bosque, es referencia educativa y cultural para generaciones de platenses, no solo un atractivo turístico.</p><p>Para quien busca naturaleza cerca, el propio Bosque de La Plata combina zoológico, museo, lagos y espacios verdes en un mismo predio grande, a pocas cuadras del centro — una combinación poco común de encontrar tan cerca del casco urbano en otras ciudades de tamaño similar.</p>"},
+    ],
+    "comparison_table": {
+        "caption": "Perfil de zonas de La Plata según qué busca el comprador/inquilino",
+        "headers": ["Zona", "Perfil típico", "Fortaleza principal"],
+        "rows": [
+            ["Casco urbano (centro)", "Estudiantes y perfil urbano", "Cercanía a la UNLP, vida universitaria"],
+            ["City Bell", "Familias, perfil residencial", "Casas con jardín, calles arboladas"],
+            ["Gonnet", "Familias, perfil medio-alto", "Tranquilidad, cercanía a countries"],
+            ["Los Hornos / Villa Elvira", "Perfil popular", "Menor costo relativo"],
+        ],
+    },
+    "faqs": [
+        {"q": "¿Por qué las calles de La Plata tienen números en vez de nombres?", "a": "Porque la ciudad fue planificada desde cero en 1882 con una trama urbana moderna para su época, con calles numeradas y diagonales que facilitan la orientación una vez aprendida la lógica."},
+        {"q": "¿Qué tan lejos está La Plata de Buenos Aires?", "a": "Aproximadamente 60 km, con un viaje de alrededor de una hora por autopista o tren, lo que permite combinar ambas ciudades en la rutina semanal."},
+        {"q": "¿City Bell es parte de La Plata?", "a": "Es una localidad del partido de La Plata, hacia el norte, con perfil más residencial y suburbano que el casco urbano."},
+        {"q": "¿Por qué La Plata tiene tanta demanda de alquiler estudiantil?", "a": "Por la Universidad Nacional de La Plata (UNLP), una de las más grandes del país, que atrae estudiantes de toda la provincia de Buenos Aires y otras regiones."},
+        {"q": "¿Qué es el Bosque de La Plata?", "a": "Un gran espacio verde dentro de la ciudad que incluye el Jardín Zoológico, el Museo de Ciencias Naturales, lagos y el estadio de fútbol."},
+        {"q": "¿Se puede vivir en La Plata sin auto?", "a": "El casco urbano es plano y bien cubierto por transporte público y bicicletas; para City Bell o Gonnet el auto facilita más la rutina diaria."},
+        {"q": "¿Cuál es la catedral de La Plata?", "a": "Es una de las catedrales neogóticas más grandes de Latinoamérica, ícono arquitectónico visible desde varios puntos de la ciudad."},
+        {"q": "¿Gonnet es una buena zona para invertir?", "a": "Es una localidad de perfil medio-alto con buena demanda residencial, valorada por su tranquilidad y cercanía a zonas de countries."},
+    ],
+    "definitions": [
+        {"term": "Casco urbano", "definition": "El área fundacional y central de La Plata, delimitada por las avenidas 1, 32, 72 y 122, con la trama de calles numeradas y diagonales."},
+        {"term": "UNLP", "definition": "Universidad Nacional de La Plata, una de las universidades públicas más grandes de Argentina."},
+        {"term": "Diagonal", "definition": "Calle que cruza en diagonal la trama de cuadras rectas de La Plata, conectando puntos clave de la ciudad de forma más directa."},
+        {"term": "Partido de La Plata", "definition": "División administrativa que incluye a la ciudad de La Plata y localidades cercanas como City Bell, Gonnet, Villa Elisa y Los Hornos."},
+    ],
+    "social": {
+        "linkedin_es": "La Plata es la única ciudad de Argentina diseñada desde cero con calles numeradas y diagonales, y su mercado inmobiliario se entiende mejor sabiendo eso: casco urbano = vida universitaria, City Bell y Gonnet = perfil familiar residencial. Armamos una guía real de zona para quien evalúa mudarse ahí o aprovechar la cercanía con Buenos Aires. La subimos a Propomi.",
+        "twitter_es": "La Plata: la única ciudad argentina planificada con calles numeradas y diagonales.\n\nCasco urbano = vida universitaria. City Bell/Gonnet = perfil familiar.\n\nGuía real de zona.",
+        "twitter_en": "La Plata, Argentina: the only city planned from scratch with numbered streets and diagonals.\n\nDowntown = university life. City Bell/Gonnet = family profile.\n\nReal zone guide.",
+    },
+}
