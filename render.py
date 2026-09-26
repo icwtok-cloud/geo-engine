@@ -130,7 +130,7 @@ def _propomi_callout(cfg, hub, slug, label):
     city = esc(hub.get("city") or hub.get("h1") or "")
     return f'<p class="propomi-inline"><a href="{esc(href)}">{esc(label)} en {city} en Propomi →</a></p>'
 
-def render_article(cfg, a, related):
+def render_article(cfg, a, related, all_hubs=None):
     slug=a["slug"]; url=f'{cfg["domain"]}{cfg["section_path"]}/{slug}'; title=a["title"]
     hub=a.get("_hub",{})
     sec_list=a["sections"]
@@ -155,6 +155,20 @@ def render_article(cfg, a, related):
     faqs="".join(f'<details><summary>{esc(f["q"])}</summary><p>{esc(f["a"])}</p></details>' for f in a["faqs"])
     defs="".join(f'<div class="def"><b>{esc(d["term"])}</b><span>{esc(d["definition"])}</span></div>' for d in a["definitions"])
     rel="".join(f'<a href="{cfg["section_path"]}/{r["slug"]}">{esc(r["title"])}</a>' for r in related)
+    # Mallado interno a propomi.lat/buscar por cada zona cubierta (ademas de
+    # la propia): entrelaza las guias entre si y da acceso directo al buscador
+    # de cada ciudad. Cantidad acotada al numero real de hubs (13 en el caso
+    # Propomi) -- lejos del limite razonable de ~100 links/pagina de Google,
+    # y cada link es contextual (zona real cubierta por el sitio), no relleno.
+    otras_zonas = ""
+    if all_hubs and cfg.get("propomi_links"):
+        others = [h for h in all_hubs if h.get("slug") != hub.get("slug")]
+        items = "".join(
+            f'<a href="{_propomi_link(cfg, h, slug)}">{esc(h.get("city") or h.get("h1") or "")}</a>'
+            for h in others
+        )
+        if items:
+            otras_zonas = f'<div class="related otras-zonas"><h3>Buscar propiedades en otras zonas</h3>{items}</div>'
     ec=cfg["endcta"]
     ec_title=ec["title"].format(city=hub.get("city") or hub.get("h1") or "")
     btn_href=ec["btn_href_tmpl"].format(slug=quote(slug), country=quote(hub.get("country") or ""), city=quote(hub.get("city") or ""))
@@ -194,6 +208,7 @@ def render_article(cfg, a, related):
   <h2>Definiciones clave</h2>
   <div class="defs">{defs}</div>
   <div class="related"><h3>Recursos relacionados</h3>{rel}</div>
+  {otras_zonas}
   <div class="endcta"><h3>{esc(ec_title)}</h3><p>{esc(ec["body"])}</p><a class="btn" href="{esc(btn_href)}">{esc(ec["btn_label"])}</a></div>
   <p class="byline">Por <b>{esc(cfg["author"]["name"])}</b> · {esc(cfg.get("author",{}).get("jobTitle",""))} · {cfg.get("date","2026-05-31")}</p>
 </div>
@@ -241,10 +256,14 @@ def main():
     cfg=json.load(open(sys.argv[1])); data=json.load(open(sys.argv[2]))
     articles=data["articles"]
     site=pathlib.Path(cfg["site_dir"]); out=site/cfg["section_dir"]; out.mkdir(parents=True,exist_ok=True)
+    all_hubs=[a.get("_hub",{}) for a in articles]
     for a in articles:
-        same=[x for x in articles if x is not a and x.get("_hub",{}).get("intent")==a.get("_hub",{}).get("intent")]
-        related=(same+[x for x in articles if x is not a and x not in same])[:3]
-        (out/f'{a["slug"]}.html').write_text(render_article(cfg,a,related),encoding="utf-8")
+        # "Recursos relacionados": el resto de las guias (acotado a lo que
+        # realmente hay -- con pocos hubs no hace falta limitar a 3, y mas
+        # cross-linking entre paginas del mismo sitio es exactamente lo que
+        # ayuda a que los motores de IA descubran y conecten todo el set).
+        related=[x for x in articles if x is not a]
+        (out/f'{a["slug"]}.html').write_text(render_article(cfg,a,related,all_hubs),encoding="utf-8")
     (site/f'{cfg["section_dir"]}.html').write_text(render_index(cfg,articles),encoding="utf-8")
     runner=pathlib.Path(__file__).parent
     base=cfg["domain"]+cfg["section_path"]; today=cfg.get("date","2026-05-31")
