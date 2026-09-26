@@ -339,6 +339,150 @@
         "city": "Buenos Aires",
         "zone": ""
       }
+    },
+    {
+      "meta_description": "Guía de zona de Córdoba capital: mercado inmobiliario por barrio, vida universitaria, y qué conocer antes de mudarte o invertir en la segunda ciudad de Argentina.",
+      "short_answer": "Córdoba capital combina un mercado inmobiliario fuertemente influido por la población universitaria (Nueva Córdoba, Alta Córdoba) con barrios residenciales más tradicionales (Cerro de las Rosas, Villa Belgrano), y una vida de barrio marcada por las sierras a pocos kilómetros del centro.",
+      "medium_answer": "Nueva Córdoba es el barrio con mayor rotación de alquileres de la ciudad por la cercanía a la Ciudad Universitaria y la ex Rural, con una oferta muy orientada a monoambientes y 2 ambientes. Cerro de las Rosas y Villa Belgrano concentran el perfil residencial de mayor poder adquisitivo, con casas y torres de categoría. Alta Córdoba mantiene un perfil más de barrio clásico, con buena conexión al centro. La ciudad tiene una identidad fuerte como polo universitario y de innovación tecnológica, lo que sostiene demanda de alquiler constante casi todo el año.",
+      "bullets": [
+        "Nueva Córdoba es el barrio de mayor movimiento estudiantil, con alta rotación de alquileres de monoambientes y 2 ambientes.",
+        "Cerro de las Rosas concentra el perfil residencial de mayor categoría, con casas y edificios boutique.",
+        "El Patio Olmos (shopping en un edificio histórico reciclado) es un punto de referencia del centro, no solo comercial.",
+        "La Cañada, el curso de agua entubado que cruza la ciudad, ordena buena parte de la trama urbana del centro.",
+        "Las sierras de Córdoba están a menos de una hora del centro, lo que atrae a compradores que buscan combinar ciudad y naturaleza.",
+        "La Manzana Jesuítica (Patrimonio de la Humanidad UNESCO) define el perfil histórico del microcentro.",
+        "Villa Belgrano y Cerro de las Rosas tienen mejor conexión con las zonas comerciales de mayor categoría de la ciudad."
+      ],
+      "sections": [
+        {
+          "h2": "El mercado inmobiliario, marcado por la vida universitaria",
+          "body_html": "<p>Córdoba es la ciudad universitaria más grande de Argentina, y eso se nota directo en su mercado inmobiliario: Nueva Córdoba tiene la mayor concentración de edificios de monoambientes y 2 ambientes del país, pensados para estudiantes que llegan de todo el interior y de países limítrofes. Esto genera un ciclo de alquiler muy marcado por el calendario académico (marzo y agosto son los meses de mayor movimiento).</p><p>Fuera de esa dinámica estudiantil, barrios como Cerro de las Rosas, Villa Belgrano y Urca concentran la demanda de compra familiar, con casas y torres de categoría más alta, en zonas más verdes y alejadas del ruido del centro universitario.</p>"
+        },
+        {
+          "h2": "Vida de barrio: entre el centro histórico y las sierras",
+          "body_html": "<p>El centro de Córdoba conserva un perfil histórico fuerte, con la Manzana Jesuítica como núcleo (Patrimonio de la Humanidad UNESCO) y el Patio Olmos como referencia de comercio y encuentro. La Cañada, el curso de agua que atraviesa la ciudad de sur a norte, funciona como un eje verde caminable en pleno centro.</p><p>A diferencia de otras capitales de provincia, Córdoba tiene la ventaja de estar a menos de una hora de las sierras (Villa Carlos Paz, La Cumbrecita, Alta Gracia), lo que hace que muchos cordobeses combinen vida de ciudad entre semana con escapadas de fin de semana sin necesidad de viajes largos.</p><ul><li>Vida universitaria activa casi todo el año en Nueva Córdoba y alrededores de Ciudad Universitaria.</li><li>Centro histórico caminable, con la Cañada como eje verde.</li><li>Cercanía real (no solo turística) a las sierras cordobesas.</li></ul>"
+        },
+        {
+          "h2": "Qué conocer antes de mudarte a Córdoba",
+          "body_html": "<p>El clima cordobés es más seco que el de Buenos Aires, con veranos calurosos e inviernos templados — un factor que muchos recién llegados valoran. El transporte público (trolebuses y colectivos) cubre bien el centro y Nueva Córdoba, aunque para zonas como Cerro de las Rosas o Villa Belgrano el auto facilita bastante el día a día.</p><p>Si el interés es invertir pensando en alquiler estudiantil, Nueva Córdoba sigue siendo la zona de referencia por volumen de demanda, aunque también es la de mayor competencia entre propietarios.</p>"
+        },
+        {
+          "h2": "Puntos de interés que conectan con la vida de barrio",
+          "body_html": "<p>La Manzana Jesuítica y la Catedral de Córdoba son parte del recorrido cotidiano de quien vive o trabaja en el centro, no solo un circuito turístico. El Patio Olmos, además de shopping, es punto de encuentro y paso obligado para quien se mueve por el centro. Para quienes buscan verde sin salir de la ciudad, el Parque Sarmiento (diseñado por Carlos Thays, el mismo paisajista de varios parques porteños) es el pulmón verde más grande de la zona sur del centro.</p><p>Estos puntos ayudan a entender por qué el centro y Nueva Córdoba sostienen valor inmobiliario a pesar de la alta rotación: hay vida de barrio real más allá del ciclo universitario.</p>"
+        }
+      ],
+      "comparison_table": {
+        "caption": "Perfil de barrios de Córdoba capital según qué busca el comprador/inquilino",
+        "headers": [
+          "Barrio",
+          "Perfil típico",
+          "Fortaleza principal"
+        ],
+        "rows": [
+          [
+            "Nueva Córdoba",
+            "Estudiantes, alquiler de corto/mediano plazo",
+            "Cercanía a la Universidad Nacional"
+          ],
+          [
+            "Cerro de las Rosas",
+            "Familias de poder adquisitivo alto",
+            "Casas, zona verde y comercial de categoría"
+          ],
+          [
+            "Villa Belgrano",
+            "Familias, perfil residencial",
+            "Tranquilidad y cercanía a countries"
+          ],
+          [
+            "Alta Córdoba",
+            "Familias, perfil de barrio clásico",
+            "Buena conexión con el centro"
+          ],
+          [
+            "Centro / Microcentro",
+            "Perfil mixto (trabajo + vida urbana)",
+            "Patrimonio histórico, comercio y oficinas"
+          ],
+          [
+            "Urca",
+            "Familias de perfil medio-alto",
+            "Zona residencial en altura, cercanía a la Cañada"
+          ]
+        ]
+      },
+      "faqs": [
+        {
+          "q": "¿Por qué Nueva Córdoba tiene tanta rotación de alquileres?",
+          "a": "Por su cercanía a la Ciudad Universitaria y a la ex Rural, es el barrio preferido por estudiantes de toda la región, lo que genera un ciclo de alquiler muy marcado por el calendario académico."
+        },
+        {
+          "q": "¿Cuál es el barrio más buscado por familias en Córdoba?",
+          "a": "Cerro de las Rosas y Villa Belgrano concentran la mayor demanda de compra familiar de poder adquisitivo medio-alto, por sus casas y su perfil más tranquilo."
+        },
+        {
+          "q": "¿Se puede vivir en Córdoba sin auto?",
+          "a": "En el centro y Nueva Córdoba es viable gracias al transporte público y a que todo queda cerca caminando; en barrios como Cerro de las Rosas o Villa Belgrano el auto facilita mucho más el día a día."
+        },
+        {
+          "q": "¿Qué tan cerca están las sierras de la ciudad?",
+          "a": "Localidades como Villa Carlos Paz o Alta Gracia están a menos de una hora en auto del centro de Córdoba, lo que permite combinar vida urbana con escapadas cortas de fin de semana."
+        },
+        {
+          "q": "¿Qué es la Manzana Jesuítica?",
+          "a": "Es el conjunto de edificios coloniales del centro de Córdoba (incluida la Universidad Nacional y la Catedral), declarado Patrimonio de la Humanidad por la UNESCO."
+        },
+        {
+          "q": "¿Conviene invertir en departamentos para alquiler estudiantil en Córdoba?",
+          "a": "Nueva Córdoba sigue siendo la zona de mayor demanda para ese perfil, aunque también concentra la mayor oferta y competencia entre propietarios."
+        },
+        {
+          "q": "¿Cómo es el clima en Córdoba capital?",
+          "a": "Más seco que el de Buenos Aires, con veranos calurosos e inviernos templados — un clima que suele valorarse positivamente por quien se muda desde zonas más húmedas."
+        },
+        {
+          "q": "¿Qué zonas verdes tiene el centro de Córdoba?",
+          "a": "El Parque Sarmiento, diseñado por Carlos Thays, es el espacio verde más importante cerca del centro, junto con el recorrido de La Cañada que atraviesa la ciudad."
+        }
+      ],
+      "definitions": [
+        {
+          "term": "La Cañada",
+          "definition": "Curso de agua entubado que atraviesa Córdoba capital de sur a norte, con un recorrido peatonal arbolado a los costados."
+        },
+        {
+          "term": "Manzana Jesuítica",
+          "definition": "Conjunto histórico del centro de Córdoba, declarado Patrimonio de la Humanidad por la UNESCO."
+        },
+        {
+          "term": "Ciudad Universitaria",
+          "definition": "Campus principal de la Universidad Nacional de Córdoba, ubicado junto al barrio Nueva Córdoba."
+        },
+        {
+          "term": "Trolebús",
+          "definition": "Sistema de transporte público eléctrico que circula por varias líneas del centro y zonas cercanas de Córdoba capital."
+        }
+      ],
+      "social": {
+        "linkedin_es": "Córdoba capital es la ciudad universitaria más grande de Argentina, y eso define su mercado inmobiliario más que cualquier otra variable: Nueva Córdoba se mueve al ritmo del calendario académico, mientras que Cerro de las Rosas y Villa Belgrano tienen una dinámica completamente distinta, de perfil familiar. Armamos una guía real de la ciudad, sin vender humo, para quien está pensando mudarse o invertir ahí. La subimos a Propomi con foco en lo que realmente cambia entre zonas.",
+        "twitter_es": "Córdoba capital no se mueve igual en todos sus barrios.\n\nNueva Córdoba = ciclo universitario.\nCerro de las Rosas / Villa Belgrano = perfil familiar.\n\nGuía real de zona, sin vender humo.",
+        "twitter_en": "Córdoba, Argentina doesn't move the same across neighborhoods.\n\nNueva Córdoba = university cycle.\nCerro de las Rosas / Villa Belgrano = family profile.\n\nReal zone guide, no fluff."
+      },
+      "slug": "cordoba-argentina",
+      "title": "Vivir en Córdoba: guía de zona y mercado inmobiliario",
+      "_hub": {
+        "slug": "cordoba-argentina",
+        "title": "Vivir en Córdoba: guía de zona y mercado inmobiliario",
+        "h1": "Guía de zona: Córdoba",
+        "primary_query_es": "como es vivir en Córdoba",
+        "primary_query_en": "what is it like living in Córdoba",
+        "intent": "long-tail",
+        "content_angle": "guía de zona de Córdoba: mercado inmobiliario, vida de barrio y turismo conectable",
+        "priority": "P1",
+        "country": "Argentina",
+        "city": "Córdoba",
+        "zone": ""
+      }
     }
   ],
   "query_count": 0,
